@@ -55,7 +55,7 @@ setTimeout(function() {
             duration:0.2,
         })
     }, 700);
-}, 500);
+}, 6500);
 
 
 // fazer aparecer as escolhas

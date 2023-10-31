@@ -125,7 +125,7 @@
   top: 0;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.384);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -172,6 +172,14 @@
   margin-top: 20px;
   margin-bottom: 10px;
   cursor: pointer;
+}
+#containerLogin .login a {
+  color: rgb(100, 100, 100);
+  margin-top: 5px;
+  cursor: pointer;
+}
+#containerLogin .login a:hover {
+  color: blue;
 }
 @media (width <= 425px) {
   #containerLogin .login label {

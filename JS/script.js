@@ -14,6 +14,11 @@ function sim(){
     
     document.body.appendChild(resposta);
 
+    setTimeout(function(){
+        var modalLogin = document.querySelector("#containerLogin");
+        modalLogin.style.display = "flex";
+    }, 500)
+
     // sumir com as opções
     gsap.to(".resposta", {
         y:80,
@@ -21,11 +26,6 @@ function sim(){
         delay:0.3,
         duration:0.5,
     })
-
-    setTimeout(function() {
-        var loginModal = document.querySelector("#containerLogin");
-        loginModal.style.display = "flex";
-    }, 500);
 }
 
 function nao(){
@@ -46,14 +46,14 @@ function nao(){
     gsap.to(".resposta", {
         y:80,
         opacity:0,
-        delay:1,
+        delay:0.3,
         duration:0.5,
     })
 }
 
 function fechar(){
-    var loginModal = document.querySelector("#containerLogin");
-    loginModal.style.display = "none";
+    var modalLogin = document.querySelector("#containerLogin");
+    modalLogin.style.display = "none";
 }
 
 // na parte do modal do login

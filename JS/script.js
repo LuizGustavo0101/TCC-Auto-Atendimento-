@@ -21,6 +21,11 @@ function sim(){
         delay:0.3,
         duration:0.5,
     })
+
+    setTimeout(function() {
+        var loginModal = document.querySelector("#containerLogin");
+        loginModal.style.display = "flex";
+    }, 500);
 }
 
 function nao(){
@@ -44,6 +49,11 @@ function nao(){
         delay:1,
         duration:0.5,
     })
+}
+
+function fechar(){
+    var loginModal = document.querySelector("#containerLogin");
+    loginModal.style.display = "none";
 }
 
 // na parte do modal do login

@@ -47,13 +47,27 @@ function nao(){
 }
 
 // na parte do modal do login
-var email = document.querySelector("#login").value;
-var senha = document.querySelector("#senha").value;
-var button = document.querySelector(".loginSite");
+function verificar(){
+    var email = document.querySelector("#usuario").value;
+    var senha = document.querySelector("#senha").value;
 
-switch(true){
-    case(email != "" && senha != ""):
-        button.style.background = "rgb(26, 134, 236)";
-        button.style.color = "white";
+    switch(true){
+        case(email == ""):
+            alert("Preencha o email")
         break
+
+        case(senha == ""):
+            alert("Preencha o senha")
+        break
+
+        case(email == "" && senha == ""):
+            alert("Preencha todos os campos")
+        break
+
+        default:
+            alert("Entrando")
+    }
 }
+
+
+

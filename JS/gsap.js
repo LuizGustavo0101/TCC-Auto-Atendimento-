@@ -18,7 +18,7 @@ tl.to(".bola5", {y:-60, duration:1, repeat:-2, delay:0.3, yoyo: true, ease: "eas
 // ou seja, o contador começará depois que tudo carregar
 window.addEventListener('load', function() {
     setTimeout(function() {
-        document.querySelector("#container1").style.display = ;
+        document.querySelector("#container1").style.display = "none";
     }, 5000);
 
     mensagem1.style.display = "none";

@@ -4,11 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Chat Gustavo</title>
         <link rel="stylesheet" href="./CSS/styles.css">
-        <script src="./JS/script.js"></script>
-        <script src="./JS/json.js"></script>
-
+        
         <!-- Bilbioteca em GSAP -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -16,7 +14,7 @@
     </head>
 
     <body>
-        <section id="container1" style="display: none;"> <!--TIRAR ESSE DISPLAY!!!!--> 
+        <section id="container1">
             <div id="bolas">
                 <div class="bola1 bola"></div>
                 <div class="bola2 bola"></div>
@@ -34,21 +32,49 @@
             </section>
             
             <section id="chatbot">
-                <div class="mensagem">
-                    <img src="./imagens/foto/FotoDoChat.jpg" class="fotoRobo" width="8%">
+                <div class="mensagem efeito1">
+                    <img src="./imagens/foto/FotoDoChat.png" class="fotoRobo" width="8%">
                 
                     <div class="caixaMensagem">
                         <p>Bom Dia!</p>
                     </div>
                 </div>
+
+                <div class="mensagem efeito2">
+                    <img src="./imagens/foto/FotoDoChat.png" class="fotoRobo" width="8%">
+                
+                    <div class="caixaMensagem">
+                        <p>Quer fazer o login no nosso site?</p>
+                    </div>
+                </div>
+
+                <div class="resposta">
+                    <div class="rolar">
+                        <button onclick="sim()" class="button">Sim</button>
+                        <button onclick="nao()" class="button">Não</button>
+                    </div>
+                </div>
             </section>
         </main>
 
-        
+        <section id="containerLogin">
+            <div class="login">
+                <h2>Entrar com a sua<br> conta</h2>
 
+                <label for="text">Email</label><br>
+                <input type="email" id="login" placeholder="Digite o seu email">
 
+                <label for="text">Senha</label><br>
+                <input type="password" id="senha" placeholder="Digite a sua senha">
+                <button class="loginSite">Fazer o login</button>
+            </div>
 
+            <div class="cadastro">
 
+            </div>
+        </section>
+
+        <script src="./JS/script.js"></script>
         <script src="./JS/gsap.js"></script>
     </body>
 </html>

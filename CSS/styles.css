@@ -12,6 +12,12 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: none;
 }
 #container1 #bolas {
   display: flex;
@@ -42,8 +48,7 @@
 }
 
 #chatbot {
-  margin-top: 30vh;
-  border: 1px solid black;
+  margin-top: 10vh;
 }
 #chatbot .mensagem {
   display: flex;
@@ -60,4 +65,103 @@
 #chatbot .mensagem .fotoRobo {
   height: 60px;
   width: 60px;
+}
+#chatbot .resposta {
+  width: 100%;
+  height: 11vh;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  background-color: white;
+  box-shadow: 0px -10px 13px -16px rgba(0, 0, 0, 0.473);
+}
+#chatbot .resposta .rolar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#chatbot .resposta .rolar .button {
+  width: 35%;
+  height: 50px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cliente {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.cliente .fotoCliente {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+}
+.cliente .caixaMensagem {
+  color: black;
+  margin-right: 10px;
+  padding: 15px 20px;
+  border-radius: 13px;
+  border-bottom-right-radius: 0px;
+  background-color: rgb(230, 230, 230);
+}
+
+#containerLogin {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.384);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#containerLogin .login {
+  background-color: white;
+  width: 70%;
+  padding-bottom: 9vh;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#containerLogin .login h2 {
+  font-size: 18px;
+  margin-top: 7vh;
+}
+#containerLogin .login label {
+  margin: 4vh 0px -10px -16vh;
+}
+#containerLogin .login input {
+  border-bottom: 1px solid black;
+  padding: 0px 0px 5px 5px;
+}
+#containerLogin .login button {
+  width: 18.3%;
+  height: 35px;
+  border-radius: 5px;
+  background-color: rgb(230, 230, 230);
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  margin-top: 20px;
+  cursor: pointer;
+}
+@media (width <= 425px) {
+  #containerLogin .login label {
+    margin: 4vh 0px -10px -10vh;
+  }
+  #containerLogin .login button {
+    width: 59%;
+    margin-top: 30px;
+  }
+}
+#containerLogin .cadastro {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */

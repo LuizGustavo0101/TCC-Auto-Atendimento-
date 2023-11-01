@@ -25,6 +25,14 @@ window.addEventListener('load', function() {
     mensagem2.style.display = "none";
 });
   
+// entrada do cabeçalho
+setTimeout(function(){
+    gsap.to("#cabecalho", {
+        y:80,
+        duration:1,
+        ease: "easeIn",
+    })
+}, 6000);
 
 // Envio de msm efeito
 setTimeout(function() {
@@ -55,7 +63,7 @@ setTimeout(function() {
             duration:0.2,
         })
     }, 700);
-}, 6500);
+}, 7500);
 
 
 // fazer aparecer as escolhas

@@ -51,6 +51,7 @@ function nao(){
     })
 }
 
+// fechar modals
 function fechar(){
     var modalLogin = document.querySelector("#containerLogin");
     modalLogin.style.display = "none";
@@ -79,5 +80,36 @@ function verificar(){
     }
 }
 
+// parte de chamar o modal do cadastro
+function criarConta(){
+    document.querySelector(".login").style.display = "none";
+    document.querySelector(".cadastro").style.display = "block";
+}
 
+// verificar botão da parte de criar conta
+function verificarConta(){
+    var usuario = document.querySelector("#nome").value;
+    var login = document.querySelector("#login").value;
+    var senha = document.querySelector("#senhaCriar").value;
 
+    switch(true){
+        case(usuario == ""):
+            alert("Preencha o seu nome")
+        break
+
+        case(login == ""):
+            alert("Preencha o email")
+        break
+
+        case(senha == ""):
+            alert("Preencha o senha")
+        break
+
+        case(login == "" && senha == "" && usuario == ""):
+            alert("Preencha todos os campos")
+        break
+
+        default:
+            alert("Entrando")
+    }
+}

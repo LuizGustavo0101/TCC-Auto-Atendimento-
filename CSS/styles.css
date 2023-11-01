@@ -2,6 +2,7 @@
   margin: 0;
   border: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   outline: none;
 }
@@ -17,7 +18,7 @@
   top: 0;
   right: 0;
   z-index: 100;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 #container1 label {
@@ -49,6 +50,10 @@
   position: absolute;
   top: 0;
   left: 0;
+  margin-top: -80px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.49);
 }
 #cabecalho nav h3 {
   font-size: 24px;
@@ -140,7 +145,7 @@
 }
 #containerLogin .login .fechar {
   position: absolute;
-  margin: 9px 0px 0px 19vh;
+  margin: 9px 0px 0px 28vh;
   font-weight: bold;
   width: 20px;
   height: 20px;
@@ -191,5 +196,52 @@
   }
 }
 #containerLogin .cadastro {
+  background-color: white;
+  padding: 5% 9%;
+  border-radius: 5px;
   display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+#containerLogin .cadastro div {
+  margin-top: 20px;
+}
+#containerLogin .cadastro .fechar {
+  position: absolute;
+  margin: -4% 0px 0px 45%;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+}
+#containerLogin .cadastro .fechar:hover {
+  color: red;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#containerLogin .cadastro input {
+  border-bottom: 1px solid black;
+  padding: 0px 0px 5px 5px;
+  margin-top: 3px;
+}
+#containerLogin .cadastro button {
+  width: 24vh;
+  height: 35px;
+  border-radius: 5px;
+  background-color: rgb(26, 134, 236);
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+@media (width <= 425px) {
+  #containerLogin .cadastro label {
+    margin-left: 2%;
+  }
+  #containerLogin .cadastro button {
+    width: 100%;
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=styles.css.map */

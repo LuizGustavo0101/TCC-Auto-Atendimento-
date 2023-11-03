@@ -71,22 +71,4 @@ setTimeout(function() {
     }, 700);
 }, 7500);
 
-document.querySelector(".fechar").addEventListener("click", function(){
-    document.querySelector(".efeito3").style.display = "flex";
-    document.querySelector(".efeito4").style.display = "flex";
-    
-    gsap.from(".efeito3", {
-        y: 80,
-        opacity:0, 
-        duration:0.3,
-    })
-
-    gsap.from(".efeito4", {
-        y: 80,
-        opacity:0, 
-        delay: 0.5,
-        duration:0.3,
-    })
-})
-
 // fazer aparecer as escolhas

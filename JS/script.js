@@ -76,6 +76,22 @@ function nao(){
 function fechar(){
     var modalLogin = document.querySelector("#containerLogin");
     modalLogin.style.display = "none";
+
+    document.querySelector(".efeito3").style.display = "flex";
+    document.querySelector(".efeito4").style.display = "flex";
+    
+    gsap.from(".efeito3", {
+        y: 80,
+        opacity:0, 
+        duration:0.3,
+    })
+
+    gsap.from(".efeito4", {
+        y: 80,
+        opacity:0, 
+        delay: 0.5,
+        duration:0.3,
+    })
 }
 
 // na parte do modal do login
@@ -152,6 +168,26 @@ function verificarConta(){
 
         default:
             alert("Entrando")
+            document.querySelector("#containerLogin").style.display = "none";
+            email = "";
+            senha = "";
+
+            document.querySelector(".efeito3").style.display = "flex";
+            document.querySelector(".efeito4").style.display = "flex";
+            
+            gsap.from(".efeito3", {
+                delay:0.5,
+                y: 80,
+                opacity:0, 
+                duration:0.3,
+            })
+
+            gsap.from(".efeito4", {
+                y: 80,
+                opacity:0, 
+                delay: 1,
+                duration:0.3,
+            })
     }
 }
 

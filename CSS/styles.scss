@@ -73,6 +73,10 @@ $cor-bot:rgb(26, 134, 236);
     }
 }
 
+main{
+    padding-right: 1em;
+}
+
 #chatbot{
     margin-top: 10vh;
 
@@ -83,7 +87,7 @@ $cor-bot:rgb(26, 134, 236);
         .caixaMensagem{
             color: white;
             font-weight: bold;
-            padding: 15px 20px;
+            padding: 15px 25px 15px 20px;
             border-radius: 13px;
             border-bottom-left-radius:0px;
             background-color: rgb(26, 134, 236);
@@ -92,6 +96,50 @@ $cor-bot:rgb(26, 134, 236);
         .fotoRobo{
             height: 60px;
             width: 60px;
+        }
+    }
+
+    .efeito3{
+        display: none;
+    }
+
+    .efeito4{
+        margin-top: 10px;
+
+        .caixaMensagem{
+            padding-left: 30px;
+        
+            img{
+                margin-bottom: 10px;
+                border-radius: 15px;
+                box-shadow: 0px 0px 5px 0px black;
+                cursor: pointer;
+            }
+
+            a{
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline;
+                    color: blue;
+                    transition: 0.2s;
+                }
+            }
+
+            .imagem-container{
+                overflow: hidden;
+                cursor: pointer;
+        
+                .zoomImagem{
+                    width: 100%;
+                    transform: scale(1.2);
+                    transition: transform 0.5s;
+                }
+            
+            }
+        
         }
     }
 

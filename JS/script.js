@@ -1,5 +1,7 @@
 // configuração do site
 function sim(){
+    var primeira = document.querySelector(".primeiraParte");
+
     var resposta = document.createElement('div');
     resposta.className = "cliente";
     resposta.innerHTML = `
@@ -12,7 +14,7 @@ function sim(){
 
     resposta.style.margin = "0px 0px 10px 0px";
     
-    document.body.appendChild(resposta);
+    primeira.appendChild(resposta);
 
     setTimeout(function(){
         var modalLogin = document.querySelector("#containerLogin");
@@ -25,10 +27,12 @@ function sim(){
         opacity:0,
         delay:0.3,
         duration:0.5,
-    })
+    });
 }
 
 function nao(){
+    var primeira = document.querySelector(".primeiraParte");
+
     var resposta = document.createElement("div");
     resposta.className = "cliente";
     resposta.innerHTML = `
@@ -40,7 +44,24 @@ function nao(){
     `
     resposta.style.margin = "0px 0px 10px 0px";
     
-    document.body.appendChild(resposta);
+    primeira.appendChild(resposta);
+
+    document.querySelector(".efeito3").style.display = "flex";
+    document.querySelector(".efeito4").style.display = "flex";
+    
+    gsap.from(".efeito3", {
+        delay:0.5,
+        y: 80,
+        opacity:0, 
+        duration:0.3,
+    })
+
+    gsap.from(".efeito4", {
+        y: 80,
+        opacity:0, 
+        delay: 1,
+        duration:0.3,
+    })
 
     // sumir com as opções
     gsap.to(".resposta", {
@@ -77,6 +98,26 @@ function verificar(){
 
         default:
             alert("Entrando")
+            document.querySelector("#containerLogin").style.display = "none";
+            email = "";
+            senha = "";
+
+            document.querySelector(".efeito3").style.display = "flex";
+            document.querySelector(".efeito4").style.display = "flex";
+            
+            gsap.from(".efeito3", {
+                delay:0.5,
+                y: 80,
+                opacity:0, 
+                duration:0.3,
+            })
+
+            gsap.from(".efeito4", {
+                y: 80,
+                opacity:0, 
+                delay: 1,
+                duration:0.3,
+            })
     }
 }
 
@@ -112,4 +153,15 @@ function verificarConta(){
         default:
             alert("Entrando")
     }
+}
+
+// dar zoom na foto do cardápio
+var cardapio = document.querySelector(".cardapio")
+cardapio.addEventListener("click", function(){
+    cardapio.classList.toggle("zoomImagem");
+})
+
+function sairMouse(){
+    var cardapio = document.querySelector(".cardapio")
+    cardapio.classList.remove("zoomImagem");
 }

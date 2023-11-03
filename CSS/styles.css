@@ -18,7 +18,7 @@
   top: 0;
   right: 0;
   z-index: 100;
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 #container1 label {
@@ -60,6 +60,10 @@
   color: white;
 }
 
+main {
+  padding-right: 1em;
+}
+
 #chatbot {
   margin-top: 10vh;
 }
@@ -70,7 +74,7 @@
 #chatbot .mensagem .caixaMensagem {
   color: white;
   font-weight: bold;
-  padding: 15px 20px;
+  padding: 15px 25px 15px 20px;
   border-radius: 13px;
   border-bottom-left-radius: 0px;
   background-color: rgb(26, 134, 236);
@@ -78,6 +82,40 @@
 #chatbot .mensagem .fotoRobo {
   height: 60px;
   width: 60px;
+}
+#chatbot .efeito3 {
+  display: none;
+}
+#chatbot .efeito4 {
+  margin-top: 10px;
+}
+#chatbot .efeito4 .caixaMensagem {
+  padding-left: 30px;
+}
+#chatbot .efeito4 .caixaMensagem img {
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 0px black;
+  cursor: pointer;
+}
+#chatbot .efeito4 .caixaMensagem a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+#chatbot .efeito4 .caixaMensagem a:hover {
+  text-decoration: underline;
+  color: blue;
+  transition: 0.2s;
+}
+#chatbot .efeito4 .caixaMensagem .imagem-container {
+  overflow: hidden;
+  cursor: pointer;
+}
+#chatbot .efeito4 .caixaMensagem .imagem-container .zoomImagem {
+  width: 100%;
+  transform: scale(1.2);
+  transition: transform 0.5s;
 }
 #chatbot .resposta {
   width: 100%;

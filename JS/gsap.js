@@ -5,6 +5,7 @@ var mensagem1 = document.querySelector(".efeito1");
 var mensagem2 = document.querySelector(".efeito2");
 var mensagem3 = document.querySelector(".efeito3");
 var mensagem4 = document.querySelector(".efeito4");
+var mensagem5 = document.querySelector(".efeito5");
 var resposta = document.querySelector(".resposta");
 
 var containerModal = document.querySelector("#containerLogin");
@@ -29,6 +30,7 @@ window.addEventListener('load', function() {
     mensagem2.style.display = "none";
     mensagem3.style.display = "none";
     mensagem4.style.display = "none";
+    mensagem5.style.display = "none";
 });
   
 // entrada do cabeçalho
@@ -41,7 +43,7 @@ setTimeout(function(){
 }, 6500);
 
 // Envio de msm efeito
-setTimeout(function() {
+setTimeout(function(){
 
     mensagem1.style.display = "flex";
     mensagem2.style.display = "flex";
@@ -70,5 +72,3 @@ setTimeout(function() {
         })
     }, 700);
 }, 7500);
-
-// fazer aparecer as escolhas

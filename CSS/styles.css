@@ -108,15 +108,6 @@ main {
   color: blue;
   transition: 0.2s;
 }
-#chatbot .efeito4 .caixaMensagem .imagem-container {
-  overflow: hidden;
-  cursor: pointer;
-}
-#chatbot .efeito4 .caixaMensagem .imagem-container .zoomImagem {
-  width: 100%;
-  transform: scale(1.2);
-  transition: transform 0.5s;
-}
 #chatbot .resposta {
   width: 100%;
   height: 11vh;
@@ -140,6 +131,46 @@ main {
   border-radius: 5px;
   font-size: 20px;
   cursor: pointer;
+}
+#chatbot .resposta .comida {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+}
+#chatbot .resposta .comida .button {
+  height: 50px;
+  padding: 0px 20px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+@media (width <= 425px) {
+  #chatbot .resposta .comida .button {
+    margin-left: 20px;
+  }
+  #chatbot .resposta .comida .comida1 {
+    margin-left: 48em;
+  }
+}
+@media (width > 425px) {
+  #chatbot .resposta .comida .button {
+    margin-left: 20px;
+  }
+  #chatbot .resposta .comida .comida1 {
+    margin-left: 30.5em;
+  }
+}
+@media (width > 768px) {
+  #chatbot .resposta .comida .button {
+    margin-left: 0px;
+  }
+  #chatbot .resposta .comida .comida1 {
+    margin-left: 0em;
+  }
 }
 
 .cliente {
@@ -282,4 +313,26 @@ main {
     width: 100%;
     margin-top: 30px;
   }
+}
+
+#modalCardapio {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.384);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#modalCardapio .container {
+  background-color: white;
+  width: 85%;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

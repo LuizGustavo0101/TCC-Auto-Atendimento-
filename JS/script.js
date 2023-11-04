@@ -20,14 +20,6 @@ function sim(){
         var modalLogin = document.querySelector("#containerLogin");
         modalLogin.style.display = "flex";
     }, 500)
-
-    // sumir com as opções
-    gsap.to(".resposta", {
-        y:80,
-        opacity:0,
-        delay:0.3,
-        duration:0.5,
-    });
 }
 
 function nao(){
@@ -46,56 +38,109 @@ function nao(){
     
     primeira.appendChild(resposta);
 
+    // sumir com as opções
+    gsap.to(".resposta", {
+        y:80,
+        opacity:0,
+        delay:0.6,
+        duration:0.5,
+    })
+
     document.querySelector(".efeito3").style.display = "flex";
     document.querySelector(".efeito4").style.display = "flex";
+    document.querySelector(".efeito5").style.display = "flex";
     
-    gsap.from(".efeito3", {
+    let tl = gsap.timeline();
+
+    tl.from(".efeito3", {
         delay:0.5,
         y: 80,
         opacity:0, 
         duration:0.3,
     })
 
-    gsap.from(".efeito4", {
+    tl.from(".efeito4", {
         y: 80,
         opacity:0, 
-        delay: 1,
         duration:0.3,
     })
 
-    // sumir com as opções
-    gsap.to(".resposta", {
+    tl.from(".efeito5", {
+        y: 80,
+        opacity:0, 
+        duration:0.3,
+    })
+
+    // aparecer os botões de escolha das comidas
+    document.querySelector(".rolar").style.display = "none";
+    document.querySelector(".comida").style.display = "flex";
+
+    tl.from(".resposta", {
         y:80,
         opacity:0,
-        delay:0.3,
-        duration:0.5,
+        delay:0.2,
+        duration:0.2,
+        onComplete:() => document.body.style.height = "97vh",
     })
 }
 
 // fechar modals
 function fechar(){
+    // sumir com as opções
+    gsap.to(".resposta", {
+        y:80,
+        opacity:0,
+        duration:0.5,
+    });
+
     var modalLogin = document.querySelector("#containerLogin");
     modalLogin.style.display = "none";
 
     document.querySelector(".efeito3").style.display = "flex";
     document.querySelector(".efeito4").style.display = "flex";
+    document.querySelector(".efeito5").style.display = "flex";
     
-    gsap.from(".efeito3", {
+    let tl = gsap.timeline()
+
+    tl.from(".efeito3", {
         y: 80,
         opacity:0, 
         duration:0.3,
     })
 
-    gsap.from(".efeito4", {
+    tl.from(".efeito4", {
         y: 80,
         opacity:0, 
-        delay: 0.5,
         duration:0.3,
+    })
+
+    tl.from(".efeito5", {
+        y: 80,
+        opacity:0, 
+        duration:0.3,
+    })
+
+    // aparecer os botões de escolha das comidas
+    document.querySelector(".rolar").style.display = "none";
+    document.querySelector(".comida").style.display = "flex";
+
+    tl.from(".resposta", {
+        y:80,
+        opacity:0,
+        duration:0.2,
+        onComplete:() => document.body.style.height = "97vh",
     })
 }
 
 // na parte do modal do login
 function verificar(){
+    // sumir com as opções
+    gsap.to(".resposta", {
+        y:80,
+        opacity:0,
+        duration:0.5,
+    });
+
     var email = document.querySelector("#usuario").value;
     var senha = document.querySelector("#senha").value;
 
@@ -120,19 +165,35 @@ function verificar(){
 
             document.querySelector(".efeito3").style.display = "flex";
             document.querySelector(".efeito4").style.display = "flex";
+            document.querySelector(".efeito5").style.display = "flex";
             
-            gsap.from(".efeito3", {
-                delay:0.5,
+            let tl = gsap.timeline()
+            tl.from(".efeito3", {
                 y: 80,
                 opacity:0, 
                 duration:0.3,
             })
 
-            gsap.from(".efeito4", {
+            tl.from(".efeito4", {
                 y: 80,
                 opacity:0, 
-                delay: 1,
                 duration:0.3,
+            })
+
+            tl.from(".efeito5", {
+                y: 80,
+                opacity:0, 
+                duration:0.3,
+            })
+
+            document.querySelector(".rolar").style.display = "none";
+            document.querySelector(".comida").style.display = "flex";
+
+            tl.from(".resposta", {
+                y:80,
+                opacity:0,
+                duration:0.2,
+                onComplete:() => document.body.style.height = "97vh",
             })
     }
 }
@@ -145,6 +206,13 @@ function criarConta(){
 
 // verificar botão da parte de criar conta
 function verificarConta(){
+    // sumir com as opções
+    gsap.to(".resposta", {
+        y:80,
+        opacity:0,
+        duration:0.5,
+    });
+
     var usuario = document.querySelector("#nome").value;
     var login = document.querySelector("#login").value;
     var senha = document.querySelector("#senhaCriar").value;
@@ -169,35 +237,53 @@ function verificarConta(){
         default:
             alert("Entrando")
             document.querySelector("#containerLogin").style.display = "none";
+            usuario = "";
             email = "";
             senha = "";
 
             document.querySelector(".efeito3").style.display = "flex";
             document.querySelector(".efeito4").style.display = "flex";
+            document.querySelector(".efeito5").style.display = "flex";
             
-            gsap.from(".efeito3", {
-                delay:0.5,
+
+            let tl = gsap.timeline()
+
+            tl.from(".efeito3", {
                 y: 80,
                 opacity:0, 
                 duration:0.3,
             })
 
-            gsap.from(".efeito4", {
+            tl.from(".efeito4", {
                 y: 80,
                 opacity:0, 
-                delay: 1,
                 duration:0.3,
+            })
+
+            tl.from(".efeito5", {
+                y: 80,
+                opacity:0,
+                duration:0.3,
+            })
+
+            document.querySelector(".rolar").style.display = "none";
+            document.querySelector(".comida").style.display = "flex";
+
+            tl.from(".resposta", {
+                y:80,
+                opacity:0,
+                duration:0.2,
+                onComplete:() => document.body.style.height = "97vh",
             })
     }
 }
 
-// dar zoom na foto do cardápio
-var cardapio = document.querySelector(".cardapio")
-cardapio.addEventListener("click", function(){
-    cardapio.classList.toggle("zoomImagem");
+//abrir cardapio
+document.querySelector(".cardapio").addEventListener("click", function(){
+    document.querySelector("#modalCardapio").style.display = "flex";
 })
 
 function sairMouse(){
-    var cardapio = document.querySelector(".cardapio")
-    cardapio.classList.remove("zoomImagem");
+    var cardapio = document.querySelector("#modalCardapio")
+    cardapio.style.display = "none";
 }

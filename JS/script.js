@@ -287,3 +287,8 @@ function sairMouse(){
     var cardapio = document.querySelector("#modalCardapio")
     cardapio.style.display = "none";
 }
+
+//adicionar um evento para todos os itens de comida
+function comida1(){
+    console.log("1")
+}

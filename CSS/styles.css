@@ -64,6 +64,7 @@
 main {
   padding-right: 1em;
   height: 88vh;
+  padding-bottom: 50px;
   overflow-y: scroll;
 }
 
@@ -370,7 +371,7 @@ main {
   height: 100%;
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 10000;
   background-color: rgba(0, 0, 0, 0.384);
   display: none;
   justify-content: center;

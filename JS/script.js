@@ -16,6 +16,7 @@ function sim(){
     
     primeira.appendChild(resposta);
 
+    // Abrir o modal da tela de login
     setTimeout(function(){
         var modalLogin = document.querySelector("#containerLogin");
         modalLogin.style.display = "flex";
@@ -80,7 +81,11 @@ function nao(){
         opacity:0,
         delay:0.2,
         duration:0.2,
-        onComplete:() => document.body.style.height = "97vh",
+    })
+
+    tl.to(".subir", {
+        x:50,
+        duration:1,
     })
 }
 
@@ -128,7 +133,11 @@ function fechar(){
         y:80,
         opacity:0,
         duration:0.2,
-        onComplete:() => document.body.style.height = "97vh",
+    })
+
+    tl.to(".subir", {
+        x:50,
+        duration:1,
     })
 }
 
@@ -194,6 +203,11 @@ function verificar(){
                 opacity:0,
                 duration:0.2,
                 onComplete:() => document.body.style.height = "97vh",
+            })
+
+            tl.to(".subir", {
+                x:50,
+                duration:1,
             })
     }
 }
@@ -275,6 +289,11 @@ function verificarConta(){
                 duration:0.2,
                 onComplete:() => document.body.style.height = "97vh",
             })
+
+            tl.to(".subir", {
+                x:50,
+                duration:1,
+            })
     }
 }
 
@@ -288,7 +307,26 @@ function sairMouse(){
     cardapio.style.display = "none";
 }
 
-//adicionar um evento para todos os itens de comida
-function comida1(){
-    console.log("1")
-}
+// botão de subir os pedidos
+document.querySelector(".subir").addEventListener("click", function(){
+    document.querySelector(".pedidos").style.display = "flex"
+    gsap.from(".pedidos", {
+        y:1000,
+        duration:0.5,
+        onComplete:() => document.querySelector(".pedidos").style.marginTop = "-10vh" 
+    })
+
+    setTimeout(function(){
+        document.querySelector(".subir").style.display = "none";
+    }, 100)
+})
+
+// fechar o modal de pedidos
+document.querySelector(".iconFechar").addEventListener("click", function(){
+    gsap.to(".pedidos", {
+        y:1000,
+        duration:0.6,
+        onComplete:() => document.querySelector(".pedidos").style.display = "none",
+        onComplete:() => document.querySelector(".subir").style.display = "flex"
+    })
+})

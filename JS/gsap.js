@@ -71,4 +71,4 @@ setTimeout(function(){
             duration:0.2,
         })
     }, 700);
-}, 7500);
+}, 8000);

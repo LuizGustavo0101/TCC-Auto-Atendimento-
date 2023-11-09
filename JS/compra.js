@@ -21,6 +21,8 @@ function comida1(){
     
 
     primeira.appendChild(resposta);
+    // document.querySelector("#chatbot").scroll(0, 200);
+    window.scroll(0, 5000)
 }
 
 function comida2(){

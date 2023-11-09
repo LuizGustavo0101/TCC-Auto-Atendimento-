@@ -83,9 +83,10 @@ function nao(){
         duration:0.2,
     })
 
-    tl.to(".subir", {
-        x:50,
-        duration:1,
+    gsap.to(".botaoSubir", {
+        x:55,
+        delay:2,
+        duration:0.3,
     })
 }
 
@@ -135,9 +136,10 @@ function fechar(){
         duration:0.2,
     })
 
-    tl.to(".subir", {
-        x:50,
-        duration:1,
+    tl.to(".botaoSubir", {
+        x:55,
+        delay:0.2,
+        duration:0.3,
     })
 }
 
@@ -205,9 +207,10 @@ function verificar(){
                 onComplete:() => document.body.style.height = "97vh",
             })
 
-            tl.to(".subir", {
-                x:50,
-                duration:1,
+            tl.to(".botaoSubir", {
+                x:55,
+                delay:0.2,
+                duration:0.3,
             })
     }
 }
@@ -290,43 +293,69 @@ function verificarConta(){
                 onComplete:() => document.body.style.height = "97vh",
             })
 
-            tl.to(".subir", {
-                x:50,
-                duration:1,
+            tl.to(".botaoSubir", {
+                x:55,
+                delay:0.2,
+                duration:0.3,
             })
     }
+}
+
+// abrir esqueceu senha
+function esqueceuSenha(){
+    document.querySelector(".login").style.display = "none";
+    document.querySelector(".esqueceuSenha").style.display = "flex";
+}
+
+// mandar o email
+function mandarEmail(){
+    var email = document.querySelector("#emailSenha");
+
+    switch(true){
+        case(email != ""):
+            document.querySelector(".frente").style.display = "none"
+            document.querySelector(".verso").style.display = "flex"
+        break
+
+        default:
+            alert("Preencha o campo de email")
+    }
+
+    
 }
 
 //abrir cardapio
 document.querySelector(".cardapio").addEventListener("click", function(){
     document.querySelector("#modalCardapio").style.display = "flex";
+
+    document.querySelector(".resposta").style.display = "none"
+    document.querySelector(".botaoSubir").style.display = "none"
 })
 
 function sairMouse(){
     var cardapio = document.querySelector("#modalCardapio")
     cardapio.style.display = "none";
-}
-
-// botão de subir os pedidos
-document.querySelector(".subir").addEventListener("click", function(){
-    document.querySelector(".pedidos").style.display = "flex"
-    gsap.from(".pedidos", {
-        y:1000,
-        duration:0.5,
-        onComplete:() => document.querySelector(".pedidos").style.marginTop = "-10vh" 
-    })
 
     setTimeout(function(){
-        document.querySelector(".subir").style.display = "none";
-    }, 100)
-})
+        document.querySelector(".resposta").style.display = "flex"
+        document.querySelector(".botaoSubir").style.display = "flex"
+    }, 50)
+}
 
-// fechar o modal de pedidos
-document.querySelector(".iconFechar").addEventListener("click", function(){
-    gsap.to(".pedidos", {
-        y:1000,
-        duration:0.6,
-        onComplete:() => document.querySelector(".pedidos").style.display = "none",
-        onComplete:() => document.querySelector(".subir").style.display = "flex"
+function subir(){
+    var pedido = document.querySelector(".pedidos");
+    pedido.style.display = "flex";
+
+    gsap.from(".pedidos",{
+        y:900,
+        duration:1,
     })
-})
+}
+
+function descer(){
+    document.querySelector(".pedidos").style.display = "none"
+}
+
+function exibir(){
+    document.querySelector("#chatbot").scroll(0, 200);
+}

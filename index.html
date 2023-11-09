@@ -96,13 +96,15 @@
 
                 </div>
 
-                <div class="pedidos">
-                    <i class="iconFechar"></i>
-                </div>
-
                 <div class="containerInferior">
-                    <div class="subir">
-                        <i class="icon"></i>
+                    <div class="compra">
+                        <button class="botaoSubir" onclick="subir()">
+                            ^
+                        </button>
+
+                        <div class="pedidos">
+                            <button onclick="descer()">X</button>
+                        </div>
                     </div>
 
                     <div class="resposta">
@@ -121,9 +123,7 @@
                             <button class="button comida7" onclick="comida7()">comida7</button>
                             <button class="button comida8" onclick="comida8()">comida8</button>
                             <button class="button comida9" onclick="comida9()">comida9</button>
-                            <button class="button comida10" onclick="comida10()">comida10</button>
-                            <button class="button fim" onclick="finalizarCompra()">Finalizar</button>
-                        </div>
+                            <button class="button comida10" onclick="comida10()">comida10</button>                        </div>
                     </div>
                 </div>
             </section>
@@ -168,6 +168,27 @@
                 </div>
 
                 <button onclick="verificarConta()">Criar conta</button>
+            </div>
+
+            <div class="esqueceuSenha">
+                <div class="frente">
+                    <p class="fechar" onclick="fechar()">x</p>
+
+                    <h2>Esqueceu senha</h2>
+
+                    <div>
+                        <label for="text">Email</label><br>
+                        <input type="text" id="emailSenha" placeholder="Digite o seu email">
+                    </div>
+
+                    <button onclick="mandarEmail()">Mandar email</button>
+                </div>
+
+                <div class="verso">
+                    <h2>Estamos mandando <br>um email para você</h2>
+
+                    <button onclick="fechar()">Aceitar</button>
+                </div>
             </div>
         </section>
 

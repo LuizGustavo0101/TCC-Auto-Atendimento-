@@ -72,3 +72,5 @@ setTimeout(function(){
         })
     }, 700);
 }, 8000);
+
+// deixar o scroll sempre no final

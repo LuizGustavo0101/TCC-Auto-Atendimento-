@@ -309,7 +309,7 @@ function esqueceuSenha(){
 
 // mandar o email
 function mandarEmail(){
-    var email = document.querySelector("#emailSenha");
+    var email = document.querySelector("#esqueceuSenhaEmail").value;
 
     switch(true){
         case(email != ""):
@@ -319,9 +319,7 @@ function mandarEmail(){
 
         default:
             alert("Preencha o campo de email")
-    }
-
-    
+    } 
 }
 
 //abrir cardapio

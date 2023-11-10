@@ -1,5 +1,5 @@
 //adicionar um evento para todos os itens de comida
-function comida1(){
+function comida1(valor){
     // desabilitar o button
     document.querySelector(".comida1").disabled = true;
 
@@ -21,11 +21,25 @@ function comida1(){
     
 
     primeira.appendChild(resposta);
-    // document.querySelector("#chatbot").scroll(0, 200);
-    window.scroll(0, 5000)
+
+    // adicionar numero ao botão de pedidos de pedidos
+    // pegar o local que vai mostrar o resultado
+    var resultado = document.querySelector(".contagemPedido");
+
+    // fazer ele aparecer
+    resultado.style.display = "flex";
+
+    // vai pegar o valor do span para ver qual é o valor atual (transformando em uma Int)
+    var numeroAtual = parseInt(resultado.innerHTML);
+
+    // mudar o numero adicionando + 1 pelo onclick no HTML (onclick="function(1))
+    var novoNumero = numeroAtual + valor;
+
+    // mostrar o resultado na tela no local
+    resultado.innerHTML = novoNumero;
 }
 
-function comida2(){
+function comida2(valor){
     // desabilitar o button
     document.querySelector(".comida2").disabled = true;
 
@@ -44,9 +58,25 @@ function comida2(){
     resposta.style.margin = "0px 0px 10px 0px";
     
     primeira.appendChild(resposta);
+
+    // adicionar numero ao botão de pedidos de pedidos
+    // pegar o local que vai mostrar o resultado
+    var resultado = document.querySelector(".contagemPedido");
+
+    // fazer ele aparecer
+    resultado.style.display = "flex";
+
+    // vai pegar o valor do span para ver qual é o valor atual (transformando em uma Int)
+    var numeroAtual = parseInt(resultado.innerHTML);
+
+    // mudar o numero adicionando + 1 pelo onclick no HTML (onclick="function(1))
+    var novoNumero = numeroAtual + valor;
+
+    // mostrar o resultado na tela no local
+    resultado.innerHTML = novoNumero;
 }
 
-function comida3(){
+function comida3(valor){
     // desabilitar o button
     document.querySelector(".comida3").disabled = true;
 
@@ -65,9 +95,25 @@ function comida3(){
     resposta.style.margin = "0px 0px 10px 0px";
     
     primeira.appendChild(resposta);
+
+    // adicionar numero ao botão de pedidos de pedidos
+    // pegar o local que vai mostrar o resultado
+    var resultado = document.querySelector(".contagemPedido");
+
+    // fazer ele aparecer
+    resultado.style.display = "flex";
+
+    // vai pegar o valor do span para ver qual é o valor atual (transformando em uma Int)
+    var numeroAtual = parseInt(resultado.innerHTML);
+
+    // mudar o numero adicionando + 1 pelo onclick no HTML (onclick="function(1))
+    var novoNumero = numeroAtual + valor;
+
+    // mostrar o resultado na tela no local
+    resultado.innerHTML = novoNumero;
 }
 
-function comida4(){
+function comida4(valor){
     // desabilitar o button
     document.querySelector(".comida4").disabled = true;
 
@@ -86,9 +132,25 @@ function comida4(){
     resposta.style.margin = "0px 0px 10px 0px";
     
     primeira.appendChild(resposta);
+
+    // adicionar numero ao botão de pedidos de pedidos
+    // pegar o local que vai mostrar o resultado
+    var resultado = document.querySelector(".contagemPedido");
+
+    // fazer ele aparecer
+    resultado.style.display = "flex";
+
+    // vai pegar o valor do span para ver qual é o valor atual (transformando em uma Int)
+    var numeroAtual = parseInt(resultado.innerHTML);
+
+    // mudar o numero adicionando + 1 pelo onclick no HTML (onclick="function(1))
+    var novoNumero = numeroAtual + valor;
+
+    // mostrar o resultado na tela no local
+    resultado.innerHTML = novoNumero;
 }
 
-function comida5(){
+function comida5(valor){
     // desabilitar o button
     document.querySelector(".comida5").disabled = true;
 
@@ -107,9 +169,25 @@ function comida5(){
     resposta.style.margin = "0px 0px 10px 0px";
     
     primeira.appendChild(resposta);
+
+    // adicionar numero ao botão de pedidos de pedidos
+    // pegar o local que vai mostrar o resultado
+    var resultado = document.querySelector(".contagemPedido");
+
+    // fazer ele aparecer
+    resultado.style.display = "flex";
+
+    // vai pegar o valor do span para ver qual é o valor atual (transformando em uma Int)
+    var numeroAtual = parseInt(resultado.innerHTML);
+
+    // mudar o numero adicionando + 1 pelo onclick no HTML (onclick="function(1))
+    var novoNumero = numeroAtual + valor;
+
+    // mostrar o resultado na tela no local
+    resultado.innerHTML = novoNumero;
 }
 
-function comida6(){
+function comida6(valor){
     // desabilitar o button
     document.querySelector(".comida6").disabled = true;
 
@@ -128,9 +206,25 @@ function comida6(){
     resposta.style.margin = "0px 0px 10px 0px";
     
     primeira.appendChild(resposta);
+
+    // adicionar numero ao botão de pedidos de pedidos
+    // pegar o local que vai mostrar o resultado
+    var resultado = document.querySelector(".contagemPedido");
+
+    // fazer ele aparecer
+    resultado.style.display = "flex";
+
+    // vai pegar o valor do span para ver qual é o valor atual (transformando em uma Int)
+    var numeroAtual = parseInt(resultado.innerHTML);
+
+    // mudar o numero adicionando + 1 pelo onclick no HTML (onclick="function(1))
+    var novoNumero = numeroAtual + valor;
+
+    // mostrar o resultado na tela no local
+    resultado.innerHTML = novoNumero;
 }
 
-function comida7(){
+function comida7(valor){
     // desabilitar o button
     document.querySelector(".comida7").disabled = true;
 
@@ -149,9 +243,25 @@ function comida7(){
     resposta.style.margin = "0px 0px 10px 0px";
     
     primeira.appendChild(resposta);
+
+    // adicionar numero ao botão de pedidos de pedidos
+    // pegar o local que vai mostrar o resultado
+    var resultado = document.querySelector(".contagemPedido");
+
+    // fazer ele aparecer
+    resultado.style.display = "flex";
+
+    // vai pegar o valor do span para ver qual é o valor atual (transformando em uma Int)
+    var numeroAtual = parseInt(resultado.innerHTML);
+
+    // mudar o numero adicionando + 1 pelo onclick no HTML (onclick="function(1))
+    var novoNumero = numeroAtual + valor;
+
+    // mostrar o resultado na tela no local
+    resultado.innerHTML = novoNumero;
 }
 
-function comida8(){
+function comida8(valor){
     // desabilitar o button
     document.querySelector(".comida8").disabled = true;
 
@@ -170,9 +280,25 @@ function comida8(){
     resposta.style.margin = "0px 0px 10px 0px";
     
     primeira.appendChild(resposta);
+
+    // adicionar numero ao botão de pedidos de pedidos
+    // pegar o local que vai mostrar o resultado
+    var resultado = document.querySelector(".contagemPedido");
+
+    // fazer ele aparecer
+    resultado.style.display = "flex";
+
+    // vai pegar o valor do span para ver qual é o valor atual (transformando em uma Int)
+    var numeroAtual = parseInt(resultado.innerHTML);
+
+    // mudar o numero adicionando + 1 pelo onclick no HTML (onclick="function(1))
+    var novoNumero = numeroAtual + valor;
+
+    // mostrar o resultado na tela no local
+    resultado.innerHTML = novoNumero;
 }
 
-function comida9(){
+function comida9(valor){
     // desabilitar o button
     document.querySelector(".comida9").disabled = true;
 
@@ -191,9 +317,25 @@ function comida9(){
     resposta.style.margin = "0px 0px 10px 0px";
     
     primeira.appendChild(resposta);
+
+    // adicionar numero ao botão de pedidos de pedidos
+    // pegar o local que vai mostrar o resultado
+    var resultado = document.querySelector(".contagemPedido");
+
+    // fazer ele aparecer
+    resultado.style.display = "flex";
+
+    // vai pegar o valor do span para ver qual é o valor atual (transformando em uma Int)
+    var numeroAtual = parseInt(resultado.innerHTML);
+
+    // mudar o numero adicionando + 1 pelo onclick no HTML (onclick="function(1))
+    var novoNumero = numeroAtual + valor;
+
+    // mostrar o resultado na tela no local
+    resultado.innerHTML = novoNumero;
 }
 
-function comida10(){
+function comida10(valor){
     // desabilitar o button
     document.querySelector(".comida10").disabled = true;
 
@@ -212,14 +354,20 @@ function comida10(){
     resposta.style.margin = "0px 0px 10px 0px";
     
     primeira.appendChild(resposta);
-}
 
-function finalizarCompra(){
-    // sumir com as opções
-    gsap.to(".resposta", {
-        y:80,
-        opacity:0,
-        delay:0.6,
-        duration:0.5,
-    })
+    // adicionar numero ao botão de pedidos de pedidos
+    // pegar o local que vai mostrar o resultado
+    var resultado = document.querySelector(".contagemPedido");
+
+    // fazer ele aparecer
+    resultado.style.display = "flex";
+
+    // vai pegar o valor do span para ver qual é o valor atual (transformando em uma Int)
+    var numeroAtual = parseInt(resultado.innerHTML);
+
+    // mudar o numero adicionando + 1 pelo onclick no HTML (onclick="function(1))
+    var novoNumero = numeroAtual + valor;
+
+    // mostrar o resultado na tela no local
+    resultado.innerHTML = novoNumero;
 }

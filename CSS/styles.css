@@ -118,6 +118,9 @@ main {
   bottom: 0;
   width: 100%;
 }
+#chatbot .containerInferior .compra {
+  overflow: hidden;
+}
 #chatbot .containerInferior .compra .botaoSubir {
   border-radius: 50%;
   width: 40px;
@@ -130,7 +133,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  margin: 24em 0px 0px -44px;
+  margin: 23em 0px 0px -44px;
   display: flex;
   justify-content: center;
   line-height: 2em;
@@ -149,27 +152,93 @@ main {
   font-size: 10px;
 }
 #chatbot .containerInferior .compra .pedidos {
+  overflow: hidden;
+  overflow-y: scroll;
   position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   top: 0;
   background-color: white;
   width: 100%;
   height: 100%;
   z-index: 100000;
-  display: none;
-  justify-content: center;
 }
-#chatbot .containerInferior .compra .pedidos button {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
+#chatbot .containerInferior .compra .pedidos .fecharPedido {
+  width: 100%;
+  height: 40px;
   background-color: white;
-  margin: 0px 0px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#chatbot .containerInferior .compra .pedidos .fecharPedido button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 20px;
-  padding: 7px 0px 0px 0px;
-  transform: rotate(180deg);
-  margin-top: 40px;
+  background-color: transparent;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos {
+  overflow-y: scroll;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 15px 20px 0px;
+  background-color: rgb(247, 247, 247);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .imagemComida {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .imagemComida div {
+  width: 8vh;
+  height: 8vh;
+  background-image: url(../imagens/foto/A\ super\ salada\ do\ chefe.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .escrita {
+  width: 35%;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .escrita p {
+  text-align: justify;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .escrita p a {
+  text-decoration: none;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .escrita p .parteAberta {
+  display: none;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .preco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .preco .valor {
+  font-size: 20px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .preco .valor .containerQuantidade {
+  display: none;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .preco .acrescentar button {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
 }
 #chatbot .containerInferior .resposta {
   height: 11vh;

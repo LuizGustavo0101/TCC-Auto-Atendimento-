@@ -212,81 +212,124 @@ main{
 
                 .containerPedidos{
                     overflow-y: scroll;
+                    padding-bottom: 30px;
+                    height: 100%;
 
-                    .itens{
-                        .item{
-                            .parteProduto{
-                                width: 100%;
-                                display: flex; 
-                                justify-content: space-evenly; 
-                                padding: 20px 15px 20px 0px;
-                                background-color: rgb(247, 247, 247);
-                                border-bottom-left-radius: 20px;                            
-                                border-bottom-right-radius: 20px;                            
-    
-                                .imagemComida{
-                                    display: flex;
-                                    align-items: center;
-                                    margin: 0px 10px 0px 10px;
-    
-                                    div{
-                                        width: 8vh;
-                                        height: 8vh;
-                                        background-image: url(../imagens/foto/A\ super\ salada\ do\ chefe.jpg);
-                                        background-size: cover;
-                                        border-radius: 50%;
+                    .item{
+                        .pedido1,
+                        .pedido2,
+                        .pedido3,
+                        .pedido4,
+                        .pedido5,
+                        .pedido6,
+                        .pedido7,
+                        .pedido8,
+                        .pedido9,
+                        .pedido10{
+                            margin-top:30px;
+                            width: 100%;
+                            display: none; 
+                            justify-content: space-evenly; 
+                            padding: 20px 15px 20px 0px;
+                            background-color: rgb(247, 247, 247);
+                            border-radius: 20px;                            
+
+                            .imagemComida{
+                                display: flex;
+                                align-items: center;
+                                margin: 0px 10px 0px 10px;
+
+                                div{
+                                    width: 8vh;
+                                    height: 8vh;
+                                    background-image: url(../imagens/foto/A\ super\ salada\ do\ chefe.jpg);
+                                    background-size: cover;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .escrita{
+                                width: 35%;
+
+                                p{
+                                    text-align: justify;
+
+                                    .parteFechada{
+                                        display: none;
+                                    }
+
+                                    .lerMenos{
+                                        display: none;
                                     }
                                 }
-    
-                                .escrita{
-                                    width: 35%;
-    
-                                    p{
-                                        text-align: justify;
-                                        a{
-                                            text-decoration: none;
-                                        }
-    
-                                        .parteAberta{
-                                            display: none;
-                                        }
+                            }
+
+                            .preco{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                
+                                .valor{
+                                    font-size: 20px;
+
+                                    .containerQuantidade{
+                                        display: none;
+                                        justify-content: center;
+                                        margin-bottom: 5px;
                                     }
                                 }
-    
-                                .preco{
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: center;
-                                    align-items: center;
-                                    
-                                    .valor{
-                                        font-size: 20px;
 
-                                        .containerQuantidade{
-                                            display: none;
-                                            justify-content: center;
-                                            margin-bottom: 5px;
-                                        }
-                                    }
-    
-                                    .acrescentar{
-                                        button{
-                                            width: 30px;
-                                            height: 30px;
-                                            font-size: 30px;
-                                            font-weight: bold;
-                                            background-color: transparent;
-                                            cursor: pointer;
-                                        }
+                                .acrescentar{
+                                    button{
+                                        width: 30px;
+                                        height: 30px;
+                                        font-size: 30px;
+                                        font-weight: bold;
+                                        background-color: transparent;
+                                        cursor: pointer;
                                     }
                                 }
                             }
                         }
                     }
                         
+                }
+
+                .finalizarPedido{
+                    padding: 20px;
+                    width: 100%;
+                    height: 80px;
+                    box-shadow: 0px 0px 4px 0px rgba(153,153,153,1);
+                    display: flex;
+                    justify-content: center;
+                    background-color: white;   
+
+                    button{
+                        padding: 10px 20px;
+                        font-size: 20px;
+                        color: white;
+                        font-weight: bold;
+                        background-color:$cor-bot;
+                        border-radius: 20px;
+                        width: 100%;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+
+                    .valorTotal{
+                        padding: 0px 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 18px;
+                        
                     }
                 }
             }
+        }
 
         .resposta{
             height: 11vh;
@@ -318,6 +361,7 @@ main{
                 height: 100%;
                 display: flex;
                 align-items: center;
+                margin-left: -85vh;
 
                 .button{
                     height: 50px;

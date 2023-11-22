@@ -37,45 +37,33 @@ function comida1(valor){
     // mostrar o resultado na tela no local
     resultado.innerHTML = novoNumero;
 
-   // adicionar a pagina de pedidos
-   var containerPedido = document.querySelector(".itens");
-   var pedido = document.createElement('div')
-   pedido.className = "item";
-   pedido.innerHTML = `
-        <div class="parteProduto">                                 
-            <div class="imagemComida"><div></div></div>
+    // adicionar a lista de pedidos
+    document.querySelector(".pedido1").style.display = "flex";
 
-            <div class="escrita">
-                <h3>Salada do chefe</h3>
-                <p>
-                    Salda de alface temperada com sal pimenta do
-                    reina 
-                    
-                    <span class="parteAberta">e limão com tomate, cebola roxa, alecrim e pepino</span>
+    // mostrar o valor final
+    var cards = document.querySelectorAll(".cardComida");
 
-                    <br>
-                    
-                    <a href="#" onclick="verMais()" onmouseleave="verMenos()">... <span class="readMore">Ver mais</span></a>
-                </p>
-            </div>
+    // Inicializar o contador
+    var numeroInicial = 0;
 
-            <div class="preco">
-                <div class="valor">
-                    <span class="containerQuantidade">(<p class="quantidade">1</p>)</span> 
-                    <span>R$<span class="valorPadrao">31</span></span>
-                </div>
+    var lista = []
 
-                <div class="acrescentar">
-                    <button onclick="acrescentar(1)" class="maisButton">+</button>
-                    <button onclick="remover(1)" class="menosButton">-</button>
-                </div>    
-            </div>                         
-        </div>  
-   `
-   pedido.style.marginTop = "30px";
-   pedido.style.marginBottom = "30px";
+    // Iterar sobre cada card
+    cards.forEach(function(card) {
+        // Verificar se o card está visível (display: flex ou display: block)
+        var estiloDisplay = getComputedStyle(card).display;
+        if (estiloDisplay === "flex" || estiloDisplay === "block") {
+            numeroInicial++;    
+        }
+    });  
 
-   containerPedido.appendChild(pedido);
+    lista.push(numeroInicial)
+
+    var conta = lista.length * 31;
+
+    var precoTotal = document.querySelector(".valorFinal");
+    var precoFinal = parseInt(precoTotal.innerHTML) + conta;
+    precoTotal.innerHTML = precoFinal;
 }
 
 function comida2(valor){
@@ -114,46 +102,34 @@ function comida2(valor){
     // mostrar o resultado na tela no local
     resultado.innerHTML = novoNumero;
 
-    // adicionar a pagina de pedidos
-    var containerPedido = document.querySelector(".itens");
-    var pedido = document.createElement('div')
-    pedido.className = "item";
-    pedido.innerHTML = `
-        <div class="parteProduto">                                 
-            <div class="imagemComida"><div></div></div>
+    // adicionar a lista de pedidos
+    document.querySelector(".pedido2").style.display = "flex";
 
-            <div class="escrita">
-                <h3>Salada do chefe</h3>
-                <p>
-                    Salda de alface temperada com sal pimenta do
-                    reina 
-                    
-                    <span class="parteAberta">e limão com tomate, cebola roxa, alecrim e pepino</span>
+    // mostrar o valor final
+    var cards = document.querySelectorAll(".cardComida");
 
-                    <br>
-                    
-                    <a href="#" onclick="verMais()" onmouseleave="verMenos()">... <span class="readMore">Ver mais</span></a>
-                </p>
-            </div>
+    // Inicializar o contador
+    var numeroInicial = 0;
 
-            <div class="preco">
-                <div class="valor">
-                    <span class="containerQuantidade">(<p class="quantidade">1</p>)</span> 
-                    <span>R$<span class="valorPadrao">31</span></span>
-                </div>
+    var lista = []
 
-                <div class="acrescentar">
-                    <button onclick="acrescentar(1)" class="maisButton">+</button>
-                    <button onclick="remover(1)" class="menosButton">-</button>
-                </div>    
-            </div>                         
-        </div>      
-       </div>    
-    `
-    pedido.style.marginBottom = "30px";
+    // Iterar sobre cada card
+    cards.forEach(function(card) {
+        // Verificar se o card está visível (display: flex ou display: block)
+        var estiloDisplay = getComputedStyle(card).display;
+        if (estiloDisplay === "flex" || estiloDisplay === "block") {
+            numeroInicial++;    
+        }
+    });  
 
-    containerPedido.appendChild(pedido);
+    lista.push(numeroInicial)
 
+    // calcular o valor final
+    var conta = lista.length * 31;
+
+    var precoTotal = document.querySelector(".valorFinal");
+    var precoFinal = parseInt(precoTotal.innerHTML) + conta;
+    precoTotal.innerHTML = precoFinal;
 }
 
 function comida3(valor){
@@ -192,45 +168,34 @@ function comida3(valor){
     // mostrar o resultado na tela no local
     resultado.innerHTML = novoNumero;
 
-    // adicionar a pagina de pedidos
-    var containerPedido = document.querySelector(".itens");
-    var pedido = document.createElement('div')
-    pedido.className = "item";
-    pedido.innerHTML = `
-        <div class="parteProduto">                                 
-            <div class="imagemComida"><div></div></div>
+    // adicionar a lista de pedidos
+    document.querySelector(".pedido3").style.display = "flex";
 
-            <div class="escrita">
-                <h3>Salada do chefe</h3>
-                <p>
-                    Salda de alface temperada com sal pimenta do
-                    reina 
-                    
-                    <span class="parteAberta">e limão com tomate, cebola roxa, alecrim e pepino</span>
+    // mostrar o valor final
+    var cards = document.querySelectorAll(".cardComida");
 
-                    <br>
-                    
-                    <a href="#" onclick="verMais()" onmouseleave="verMenos()">... <span class="readMore">Ver mais</span></a>
-                </p>
-            </div>
+    // Inicializar o contador
+    var numeroInicial = 0;
 
-            <div class="preco">
-                <div class="valor">
-                    <span class="containerQuantidade">(<p class="quantidade">1</p>)</span> 
-                    <span>R$<span class="valorPadrao">31</span></span>
-                </div>
+    var lista = []
 
-                <div class="acrescentar">
-                    <button onclick="acrescentar(1)" class="maisButton">+</button>
-                    <button onclick="remover(1)" class="menosButton">-</button>
-                </div>    
-            </div>                         
-        </div>      
-    `
-    pedido.style.marginBottom = "30px";
+    // Iterar sobre cada card
+    cards.forEach(function(card) {
+        // Verificar se o card está visível (display: flex ou display: block)
+        var estiloDisplay = getComputedStyle(card).display;
+        if (estiloDisplay === "flex" || estiloDisplay === "block") {
+            numeroInicial++;    
+        }
+    });  
 
-    containerPedido.appendChild(pedido);
+    lista.push(numeroInicial)
 
+    // calcular o valor final
+    var conta = lista.length * 31;
+
+    var precoTotal = document.querySelector(".valorFinal");
+    var precoFinal = parseInt(precoTotal.innerHTML) + conta;
+    precoTotal.innerHTML = precoFinal;
 }
 
 function comida4(valor){
@@ -269,45 +234,34 @@ function comida4(valor){
     // mostrar o resultado na tela no local
     resultado.innerHTML = novoNumero;
 
-    // adicionar a pagina de pedidos
-    var containerPedido = document.querySelector(".itens");
-    var pedido = document.createElement('div')
-    pedido.className = "item";
-    pedido.innerHTML = `
-        <div class="parteProduto">                                 
-            <div class="imagemComida"><div></div></div>
+    // adicionar a lista de pedidos
+    document.querySelector(".pedido4").style.display = "flex";
 
-            <div class="escrita">
-                <h3>Salada do chefe</h3>
-                <p>
-                    Salda de alface temperada com sal pimenta do
-                    reina 
-                    
-                    <span class="parteAberta">e limão com tomate, cebola roxa, alecrim e pepino</span>
+    // mostrar o valor final
+    var cards = document.querySelectorAll(".cardComida");
 
-                    <br>
-                    
-                    <a href="#" onclick="verMais()" onmouseleave="verMenos()">... <span class="readMore">Ver mais</span></a>
-                </p>
-            </div>
+    // Inicializar o contador
+    var numeroInicial = 0;
 
-            <div class="preco">
-                <div class="valor">
-                    <span class="containerQuantidade">(<p class="quantidade">1</p>)</span> 
-                    <span>R$<span class="valorPadrao">31</span></span>
-                </div>
+    var lista = []
 
-                <div class="acrescentar">
-                    <button onclick="acrescentar(1)" class="maisButton">+</button>
-                    <button onclick="remover(1)" class="menosButton">-</button>
-                </div>    
-            </div>                         
-        </div>      
-    `
-    pedido.style.marginBottom = "30px";
+    // Iterar sobre cada card
+    cards.forEach(function(card) {
+        // Verificar se o card está visível (display: flex ou display: block)
+        var estiloDisplay = getComputedStyle(card).display;
+        if (estiloDisplay === "flex" || estiloDisplay === "block") {
+            numeroInicial++;    
+        }
+    });  
 
-    containerPedido.appendChild(pedido);
+    lista.push(numeroInicial)
 
+    // calcular o valor final
+    var conta = lista.length * 31;
+
+    var precoTotal = document.querySelector(".valorFinal");
+    var precoFinal = parseInt(precoTotal.innerHTML) + conta;
+    precoTotal.innerHTML = precoFinal;
 }
 
 function comida5(valor){
@@ -346,45 +300,34 @@ function comida5(valor){
     // mostrar o resultado na tela no local
     resultado.innerHTML = novoNumero;
 
-    // adicionar a pagina de pedidos
-    var containerPedido = document.querySelector(".itens");
-    var pedido = document.createElement('div')
-    pedido.className = "item";
-    pedido.innerHTML = `
-        <div class="parteProduto">                                 
-            <div class="imagemComida"><div></div></div>
+    // adicionar a lista de pedidos
+    document.querySelector(".pedido5").style.display = "flex";
 
-            <div class="escrita">
-                <h3>Salada do chefe</h3>
-                <p>
-                    Salda de alface temperada com sal pimenta do
-                    reina 
-                    
-                    <span class="parteAberta">e limão com tomate, cebola roxa, alecrim e pepino</span>
+    // mostrar o valor final
+    var cards = document.querySelectorAll(".cardComida");
 
-                    <br>
-                    
-                    <a href="#" onclick="verMais()" onmouseleave="verMenos()">... <span class="readMore">Ver mais</span></a>
-                </p>
-            </div>
+    // Inicializar o contador
+    var numeroInicial = 0;
 
-            <div class="preco">
-                <div class="valor">
-                    <span class="containerQuantidade">(<p class="quantidade">1</p>)</span> 
-                    <span>R$<span class="valorPadrao">31</span></span>
-                </div>
+    var lista = []
 
-                <div class="acrescentar">
-                    <button onclick="acrescentar(1)" class="maisButton">+</button>
-                    <button onclick="remover(1)" class="menosButton">-</button>
-                </div>    
-            </div>                         
-        </div>      
-    `
-    pedido.style.marginBottom = "30px";
+    // Iterar sobre cada card
+    cards.forEach(function(card) {
+        // Verificar se o card está visível (display: flex ou display: block)
+        var estiloDisplay = getComputedStyle(card).display;
+        if (estiloDisplay === "flex" || estiloDisplay === "block") {
+            numeroInicial++;    
+        }
+    });  
 
-    containerPedido.appendChild(pedido);
+    lista.push(numeroInicial)
 
+    // calcular o valor final
+    var conta = lista.length * 31;
+
+    var precoTotal = document.querySelector(".valorFinal");
+    var precoFinal = parseInt(precoTotal.innerHTML) + conta;
+    precoTotal.innerHTML = precoFinal;
 }
 
 function comida6(valor){
@@ -423,45 +366,34 @@ function comida6(valor){
     // mostrar o resultado na tela no local
     resultado.innerHTML = novoNumero;
 
-    // adicionar a pagina de pedidos
-    var containerPedido = document.querySelector(".itens");
-    var pedido = document.createElement('div')
-    pedido.className = "item";
-    pedido.innerHTML = `
-        <div class="parteProduto">                                 
-            <div class="imagemComida"><div></div></div>
+    // adicionar a lista de pedidos
+    document.querySelector(".pedido6").style.display = "flex";
 
-            <div class="escrita">
-                <h3>Salada do chefe</h3>
-                <p>
-                    Salda de alface temperada com sal pimenta do
-                    reina 
-                    
-                    <span class="parteAberta">e limão com tomate, cebola roxa, alecrim e pepino</span>
+    // mostrar o valor final
+    var cards = document.querySelectorAll(".cardComida");
 
-                    <br>
-                    
-                    <a href="#" onclick="verMais()" onmouseleave="verMenos()">... <span class="readMore">Ver mais</span></a>
-                </p>
-            </div>
+    // Inicializar o contador
+    var numeroInicial = 0;
 
-            <div class="preco">
-                <div class="valor">
-                    <span class="containerQuantidade">(<p class="quantidade">1</p>)</span> 
-                    <span>R$<span class="valorPadrao">31</span></span>
-                </div>
+    var lista = []
 
-                <div class="acrescentar">
-                    <button onclick="acrescentar(1)" class="maisButton">+</button>
-                    <button onclick="remover(1)" class="menosButton">-</button>
-                </div>    
-            </div>                         
-        </div>      
-    `
-    pedido.style.marginBottom = "30px";
+    // Iterar sobre cada card
+    cards.forEach(function(card) {
+        // Verificar se o card está visível (display: flex ou display: block)
+        var estiloDisplay = getComputedStyle(card).display;
+        if (estiloDisplay === "flex" || estiloDisplay === "block") {
+            numeroInicial++;    
+        }
+    });  
 
-    containerPedido.appendChild(pedido);
+    lista.push(numeroInicial)
 
+    // calcular o valor final
+    var conta = lista.length * 31;
+
+    var precoTotal = document.querySelector(".valorFinal");
+    var precoFinal = parseInt(precoTotal.innerHTML) + conta;
+    precoTotal.innerHTML = precoFinal;
 }
 
 function comida7(valor){
@@ -500,45 +432,34 @@ function comida7(valor){
     // mostrar o resultado na tela no local
     resultado.innerHTML = novoNumero;
 
-    // adicionar a pagina de pedidos
-    var containerPedido = document.querySelector(".itens");
-    var pedido = document.createElement('div')
-    pedido.className = "item";
-    pedido.innerHTML = `
-        <div class="parteProduto">                                 
-            <div class="imagemComida"><div></div></div>
+    // adicionar a lista de pedidos
+    document.querySelector(".pedido7").style.display = "flex";
 
-            <div class="escrita">
-                <h3>Salada do chefe</h3>
-                <p>
-                    Salda de alface temperada com sal pimenta do
-                    reina 
-                    
-                    <span class="parteAberta">e limão com tomate, cebola roxa, alecrim e pepino</span>
+    // mostrar o valor final
+    var cards = document.querySelectorAll(".cardComida");
 
-                    <br>
-                    
-                    <a href="#" onclick="verMais()" onmouseleave="verMenos()">... <span class="readMore">Ver mais</span></a>
-                </p>
-            </div>
+    // Inicializar o contador
+    var numeroInicial = 0;
 
-            <div class="preco">
-                <div class="valor">
-                    <span class="containerQuantidade">(<p class="quantidade">1</p>)</span> 
-                    <span>R$<span class="valorPadrao">31</span></span>
-                </div>
+    var lista = []
 
-                <div class="acrescentar">
-                    <button onclick="acrescentar(1)" class="maisButton">+</button>
-                    <button onclick="remover(1)" class="menosButton">-</button>
-                </div>    
-            </div>                         
-        </div>      
-    `
-    pedido.style.marginBottom = "30px";
+    // Iterar sobre cada card
+    cards.forEach(function(card) {
+        // Verificar se o card está visível (display: flex ou display: block)
+        var estiloDisplay = getComputedStyle(card).display;
+        if (estiloDisplay === "flex" || estiloDisplay === "block") {
+            numeroInicial++;    
+        }
+    });  
 
-    containerPedido.appendChild(pedido);
+    lista.push(numeroInicial)
 
+    // calcular o valor final
+    var conta = lista.length * 31;
+
+    var precoTotal = document.querySelector(".valorFinal");
+    var precoFinal = parseInt(precoTotal.innerHTML) + conta;
+    precoTotal.innerHTML = precoFinal;
 }
 
 function comida8(valor){
@@ -577,45 +498,34 @@ function comida8(valor){
     // mostrar o resultado na tela no local
     resultado.innerHTML = novoNumero;
 
-    // adicionar a pagina de pedidos
-    var containerPedido = document.querySelector(".itens");
-    var pedido = document.createElement('div')
-    pedido.className = "item";
-    pedido.innerHTML = `
-        <div class="parteProduto">                                 
-            <div class="imagemComida"><div></div></div>
+    // adicionar a lista de pedidos
+    document.querySelector(".pedido8").style.display = "flex";
 
-            <div class="escrita">
-                <h3>Salada do chefe</h3>
-                <p>
-                    Salda de alface temperada com sal pimenta do
-                    reina 
-                    
-                    <span class="parteAberta">e limão com tomate, cebola roxa, alecrim e pepino</span>
+    // mostrar o valor final
+    var cards = document.querySelectorAll(".cardComida");
 
-                    <br>
-                    
-                    <a href="#" onclick="verMais()" onmouseleave="verMenos()">... <span class="readMore">Ver mais</span></a>
-                </p>
-            </div>
+    // Inicializar o contador
+    var numeroInicial = 0;
 
-            <div class="preco">
-                <div class="valor">
-                    <span class="containerQuantidade">(<p class="quantidade">1</p>)</span> 
-                    <span>R$<span class="valorPadrao">31</span></span>
-                </div>
+    var lista = []
 
-                <div class="acrescentar">
-                    <button onclick="acrescentar(1)" class="maisButton">+</button>
-                    <button onclick="remover(1)" class="menosButton">-</button>
-                </div>    
-            </div>                         
-        </div>      
-    `
-    pedido.style.marginBottom = "30px";
+    // Iterar sobre cada card
+    cards.forEach(function(card) {
+        // Verificar se o card está visível (display: flex ou display: block)
+        var estiloDisplay = getComputedStyle(card).display;
+        if (estiloDisplay === "flex" || estiloDisplay === "block") {
+            numeroInicial++;    
+        }
+    });  
 
-    containerPedido.appendChild(pedido);
+    lista.push(numeroInicial)
 
+    // calcular o valor final
+    var conta = lista.length * 31;
+
+    var precoTotal = document.querySelector(".valorFinal");
+    var precoFinal = parseInt(precoTotal.innerHTML) + conta;
+    precoTotal.innerHTML = precoFinal;
 }
 
 function comida9(valor){
@@ -654,45 +564,34 @@ function comida9(valor){
     // mostrar o resultado na tela no local
     resultado.innerHTML = novoNumero;
 
-    // adicionar a pagina de pedidos
-    var containerPedido = document.querySelector(".itens");
-    var pedido = document.createElement('div')
-    pedido.className = "item";
-    pedido.innerHTML = `
-        <div class="parteProduto">                                 
-            <div class="imagemComida"><div></div></div>
+    // adicionar a lista de pedidos
+    document.querySelector(".pedido9").style.display = "flex";
 
-            <div class="escrita">
-                <h3>Salada do chefe</h3>
-                <p>
-                    Salda de alface temperada com sal pimenta do
-                    reina 
-                    
-                    <span class="parteAberta">e limão com tomate, cebola roxa, alecrim e pepino</span>
+    // mostrar o valor final
+    var cards = document.querySelectorAll(".cardComida");
 
-                    <br>
-                    
-                    <a href="#" onclick="verMais()" onmouseleave="verMenos()">... <span class="readMore">Ver mais</span></a>
-                </p>
-            </div>
+    // Inicializar o contador
+    var numeroInicial = 0;
 
-            <div class="preco">
-                <div class="valor">
-                    <span class="containerQuantidade">(<p class="quantidade">1</p>)</span> 
-                    <span>R$<span class="valorPadrao">31</span></span>
-                </div>
+    var lista = []
 
-                <div class="acrescentar">
-                    <button onclick="acrescentar(1)" class="maisButton">+</button>
-                    <button onclick="remover(1)" class="menosButton">-</button>
-                </div>    
-            </div>                         
-        </div>      
-    `
-    pedido.style.marginBottom = "30px";
+    // Iterar sobre cada card
+    cards.forEach(function(card) {
+        // Verificar se o card está visível (display: flex ou display: block)
+        var estiloDisplay = getComputedStyle(card).display;
+        if (estiloDisplay === "flex" || estiloDisplay === "block") {
+            numeroInicial++;    
+        }
+    });  
 
-    containerPedido.appendChild(pedido);
+    lista.push(numeroInicial)
 
+    // calcular o valor final
+    var conta = lista.length * 31;
+
+    var precoTotal = document.querySelector(".valorFinal");
+    var precoFinal = parseInt(precoTotal.innerHTML) + conta;
+    precoTotal.innerHTML = precoFinal;
 }
 
 function comida10(valor){
@@ -731,80 +630,130 @@ function comida10(valor){
     // mostrar o resultado na tela no local
     resultado.innerHTML = novoNumero;
 
-    // adicionar a pagina de pedidos
-    var containerPedido = document.querySelector(".itens");
-    var pedido = document.createElement('div')
-    pedido.className = "item";
-    pedido.innerHTML = `
-        <div class="parteProduto">                                 
-            <div class="imagemComida"><div></div></div>
+    // adicionar a lista de pedidos
+    document.querySelector(".pedido10").style.display = "flex";
 
-            <div class="escrita">
-                <h3>Salada do chefe</h3>
-                <p>
-                    Salda de alface temperada com sal pimenta do
-                    reina 
-                    
-                    <span class="parteAberta">e limão com tomate, cebola roxa, alecrim e pepino</span>
+    // mostrar o valor final
+    var cards = document.querySelectorAll(".cardComida");
 
-                    <br>
-                    
-                    <a href="#" onclick="verMais()" onmouseleave="verMenos()">... <span class="readMore">Ver mais</span></a>
-                </p>
-            </div>
+    // Inicializar o contador
+    var numeroInicial = 0;
 
-            <div class="preco">
-                <div class="valor">
-                    <span class="containerQuantidade">(<p class="quantidade">1</p>)</span> 
-                    <span>R$<span class="valorPadrao">31</span></span>
-                </div>
+    var lista = []
 
-                <div class="acrescentar">
-                    <button onclick="acrescentar(1)" class="maisButton">+</button>
-                    <button onclick="remover(1)" class="menosButton">-</button>
-                </div>    
-            </div>                         
-        </div>      
-    `
-    pedido.style.marginBottom = "30px";
+    // Iterar sobre cada card
+    cards.forEach(function(card) {
+        // Verificar se o card está visível (display: flex ou display: block)
+        var estiloDisplay = getComputedStyle(card).display;
+        if (estiloDisplay === "flex" || estiloDisplay === "block") {
+            numeroInicial++;    
+        }
+    });  
 
-    containerPedido.appendChild(pedido);
+    lista.push(numeroInicial)
+
+    // calcular o valor final
+    var conta = lista.length * 31;
+
+    var precoTotal = document.querySelector(".valorFinal");
+    var precoFinal = parseInt(precoTotal.innerHTML) + conta;
+    precoTotal.innerHTML = precoFinal;
 }
 
-// botão do Read More
-function verMais(){
-    document.querySelector(".parteAberta").style.display = "flex";
 
-    document.querySelector(".readMore").innerHTML = `Ver menos`;
+// Adicione um evento de clique para cada botão de "Ver mais" e "Ver menos"
+var cards = document.querySelectorAll(".cardComida");
+
+cards.forEach(function(card) {
+    var lerMaisButton = card.querySelector(".lerMais");
+    var lerMenosButton = card.querySelector(".lerMenos");
+
+    lerMaisButton.addEventListener("click", function() {
+        verMais(card);
+    });
+
+    lerMenosButton.addEventListener("click", function() {
+        verMenos(card);
+    });
+});
+
+function verMais(card){
+    var maisTexto = card.querySelector(".parteFechada");
+    var lerMais = card.querySelector(".lerMais");
+    var lerMenos = card.querySelector(".lerMenos");
+
+    maisTexto.style.display = "flex";
+    lerMais.style.display = "none";
+    lerMenos.style.display = "flex";
 }
 
-function verMenos(){
-    document.querySelector(".parteAberta").style.display = "none";
-    document.querySelector(".readMore").innerHTML = `Ver mais`;
+function verMenos(card){
+    var maisTexto = card.querySelector(".parteFechada");
+    var lerMais = card.querySelector(".lerMais");
+    var lerMenos = card.querySelector(".lerMenos");
+
+    maisTexto.style.display = "none";
+    lerMais.style.display = "flex";
+    lerMenos.style.display = "none";
 }
+
 
 // acrescentar
-function acrescentar(valor){
-    document.querySelector(".containerQuantidade").style.display = "flex";
+function acrescentar(numeroPedido){
+    var card = document.querySelector(".pedido" + numeroPedido);
 
-    var quantidadeComida = document.querySelector(".quantidade");
-    var n1 = parseInt(quantidadeComida.innerHTML);
-    var novo = n1 + valor;
-    quantidadeComida.innerHTML = novo;
+    var quantidade = card.querySelector(".quantidade");
+    var quantidadeFinal = parseInt(quantidade.innerHTML);
+    quantidade.innerHTML = quantidadeFinal + 1;
+
+    var valorPadrao = card.querySelector(".valorPadrao");
+    var valorFinal = parseInt(valorPadrao.innerHTML);
+    valorPadrao.innerHTML = valorFinal + 31;
+
+    var valorPedido = document.querySelector(".valorFinal");
+    var valorNumero = parseInt(valorPedido.innerHTML);
+    valorPedido.innerHTML = valorNumero + 31
 }
 
-function remover(valor){
-    var quantidadeComida = document.querySelector(".quantidade").innerText;
-    quantidadeComida = parseInt(quantidadeComida);
+function remover(numeroPedido){
+    var card = document.querySelector(".pedido" + numeroPedido);
 
-    if(quantidadeComida == 1){
+    var quantidadeComida = card.querySelector(".quantidade");
+    quantidadeComida = parseInt(quantidadeComida.innerHTML);
+
+    if (quantidadeComida === 1) {
         alert("Vamos excluir esse item do seu pedido");
+        quantidadeComida -1;
+        card.style.display = "none";  // ou faça o que for necessário para remover o card
+        
+        var precoTotal = document.querySelector(".valorFinal");
+        var precoFinal = parseInt(precoTotal.innerHTML) - 31;
+        precoTotal.innerHTML = precoFinal;
 
-        document.querySelector(".item").style.display = "none";
-    }else{
-        var quantidadeComida = document.querySelector(".quantidade");
+        // tirar a config do card para desvizualiçaõa na pagina principal
+        // pegar o local que vai mostrar o resultado
+        var resultado = document.querySelector(".contagemPedido");
+        var numeroAtual = parseInt(resultado.innerHTML);
+
+        if(numeroAtual <= 1){
+            resultado.style.display = "none";
+        }else{
+            var novoNumero = numeroAtual - 1;
+            resultado.innerHTML = novoNumero;
+        }
+        
+    } else {
+        var quantidadeComida = card.querySelector(".quantidade");
         var n1 = parseInt(quantidadeComida.innerHTML);
-        var novo = n1 - valor;
+        var novo = n1 - 1;
         quantidadeComida.innerHTML = novo;
+
+        var valorPadrao = card.querySelector(".valorPadrao");
+        var valorCard = parseInt(valorPadrao.innerHTML);
+        valorPadrao.innerHTML = valorCard - 31;
+
+        var precoTotal = document.querySelector(".valorFinal");
+        var precoFinal = parseInt(precoTotal.innerHTML) - 31;
+        precoTotal.innerHTML = precoFinal;
     }
 }

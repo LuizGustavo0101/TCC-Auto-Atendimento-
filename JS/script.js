@@ -357,3 +357,10 @@ function descer(){
 function exibir(){
     document.querySelector("#chatbot").scroll(0, 200);
 }
+
+// Parte de finalizar o pedido do cliente
+function finalizarPedido(){
+    document.querySelector(".pedidos").style.display = "none"
+
+    
+}

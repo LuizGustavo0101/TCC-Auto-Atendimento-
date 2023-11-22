@@ -184,61 +184,190 @@ main {
 }
 #chatbot .containerInferior .compra .pedidos .containerPedidos {
   overflow-y: scroll;
+  padding-bottom: 30px;
+  height: 100%;
 }
-#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto {
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 {
+  margin-top: 30px;
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   padding: 20px 15px 20px 0px;
   background-color: rgb(247, 247, 247);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 20px;
 }
-#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .imagemComida {
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida {
   display: flex;
   align-items: center;
   margin: 0px 10px 0px 10px;
 }
-#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .imagemComida div {
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida div {
   width: 8vh;
   height: 8vh;
   background-image: url(../imagens/foto/A\ super\ salada\ do\ chefe.jpg);
   background-size: cover;
   border-radius: 50%;
 }
-#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .escrita {
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .escrita,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .escrita,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .escrita,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .escrita,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .escrita,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .escrita,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .escrita,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .escrita,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .escrita,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .escrita {
   width: 35%;
 }
-#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .escrita p {
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .escrita p,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .escrita p,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .escrita p,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .escrita p,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .escrita p,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .escrita p,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .escrita p,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .escrita p,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .escrita p,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .escrita p {
   text-align: justify;
 }
-#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .escrita p a {
-  text-decoration: none;
-}
-#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .escrita p .parteAberta {
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .escrita p .parteFechada,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .escrita p .parteFechada,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .escrita p .parteFechada,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .escrita p .parteFechada,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .escrita p .parteFechada,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .escrita p .parteFechada,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .escrita p .parteFechada,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .escrita p .parteFechada,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .escrita p .parteFechada,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .escrita p .parteFechada {
   display: none;
 }
-#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .preco {
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .escrita p .lerMenos,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .escrita p .lerMenos,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .escrita p .lerMenos,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .escrita p .lerMenos,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .escrita p .lerMenos,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .escrita p .lerMenos,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .escrita p .lerMenos,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .escrita p .lerMenos,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .escrita p .lerMenos,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .escrita p .lerMenos {
+  display: none;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .preco,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .preco,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .preco,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .preco,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .preco,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .preco,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .preco,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .preco,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .preco,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .preco {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .preco .valor {
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .preco .valor,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .preco .valor,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .preco .valor,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .preco .valor,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .preco .valor,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .preco .valor,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .preco .valor,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .preco .valor,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .preco .valor,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .preco .valor {
   font-size: 20px;
 }
-#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .preco .valor .containerQuantidade {
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .preco .valor .containerQuantidade,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .preco .valor .containerQuantidade,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .preco .valor .containerQuantidade,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .preco .valor .containerQuantidade,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .preco .valor .containerQuantidade,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .preco .valor .containerQuantidade,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .preco .valor .containerQuantidade,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .preco .valor .containerQuantidade,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .preco .valor .containerQuantidade,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .preco .valor .containerQuantidade {
   display: none;
   justify-content: center;
   margin-bottom: 5px;
 }
-#chatbot .containerInferior .compra .pedidos .containerPedidos .itens .item .parteProduto .preco .acrescentar button {
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .preco .acrescentar button,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .preco .acrescentar button,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .preco .acrescentar button,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .preco .acrescentar button,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .preco .acrescentar button,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .preco .acrescentar button,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .preco .acrescentar button,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .preco .acrescentar button,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .preco .acrescentar button,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .preco .acrescentar button {
   width: 30px;
   height: 30px;
   font-size: 30px;
   font-weight: bold;
   background-color: transparent;
   cursor: pointer;
+}
+#chatbot .containerInferior .compra .pedidos .finalizarPedido {
+  padding: 20px;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 0px 4px 0px rgb(153, 153, 153);
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+#chatbot .containerInferior .compra .pedidos .finalizarPedido button {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(26, 134, 236);
+  border-radius: 20px;
+  width: 100%;
+}
+#chatbot .containerInferior .compra .pedidos .finalizarPedido button:hover {
+  cursor: pointer;
+}
+#chatbot .containerInferior .compra .pedidos .finalizarPedido .valorTotal {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
 #chatbot .containerInferior .resposta {
   height: 11vh;
@@ -268,6 +397,7 @@ main {
   height: 100%;
   display: flex;
   align-items: center;
+  margin-left: -85vh;
 }
 #chatbot .containerInferior .resposta .comida .button {
   height: 50px;

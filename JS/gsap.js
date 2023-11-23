@@ -6,6 +6,13 @@ var mensagem2 = document.querySelector(".efeito2");
 var mensagem3 = document.querySelector(".efeito3");
 var mensagem4 = document.querySelector(".efeito4");
 var mensagem5 = document.querySelector(".efeito5");
+var mensagem6 = document.querySelector(".efeito6");
+var mensagem7 = document.querySelector(".efeito7");
+var mensagem8 = document.querySelector(".efeito8");
+var mensagem9 = document.querySelector(".efeito9");
+var mensagem10 = document.querySelector(".efeito10");
+var mensagem11 = document.querySelector(".efeito11");
+var mensagem12 = document.querySelector(".efeito12");
 var resposta = document.querySelector(".resposta");
 
 var containerModal = document.querySelector("#containerLogin");
@@ -31,6 +38,12 @@ window.addEventListener('load', function() {
     mensagem3.style.display = "none";
     mensagem4.style.display = "none";
     mensagem5.style.display = "none";
+    mensagem6.style.display = "none";
+    mensagem7.style.display = "none";
+    mensagem8.style.display = "none";
+    mensagem9.style.display = "none";
+    mensagem10.style.display = "none";
+    mensagem11.style.display = "none";
 });
   
 // entrada do cabeçalho

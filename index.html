@@ -96,6 +96,71 @@
 
                 </div>
 
+                <div class="quartaParte">
+                    <div class="mensagem efeito6">
+                        <img src="./imagens/foto/FotoDoChat.png" class="fotoRobo" width="8%">
+                    
+                        <div class="caixaMensagem">
+                            <p>Qual seria a forma de pagamento?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quintaParte">
+                    <div class="mensagem efeito7">
+                        <img src="./imagens/foto/FotoDoChat.png" class="fotoRobo" width="8%"><br>
+                    
+                        <div class="caixaMensagem">
+                            <p>Qual o metodo de pagamento?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sextaParte">
+                    <!-- QR CODE -->
+                    <div class="mensagem efeito8">
+                        <img src="./imagens/foto/FotoDoChat.png" class="fotoRobo" width="8%"><br>
+                    
+                        <div class="caixaMensagem">
+                            <p>Pagamento será feito ao noso estabelecimentos</p>
+                            <div class="pixContainer">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pix Copia e cola -->
+                    <div class="mensagem efeito9">
+                        <img src="./imagens/foto/FotoDoChat.png" class="fotoRobo" width="8%"><br>
+                    
+                        <div class="caixaMensagem">
+                            <p>Chave Pix: <a class="copiar">12345678910</a></p>
+                        </div>
+                    </div>
+
+                    <div class="mensagem efeito10">
+                        <img src="./imagens/foto/FotoDoChat.png" class="fotoRobo" width="8%"><br>
+                    
+                        <div class="caixaMensagem">
+                            <a onclick="copiar()">Clique aq para copiar o código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="setimaParte">
+                    <div class="mensagem efeito11">
+                        <img src="./imagens/foto/FotoDoChat.png" class="fotoRobo" width="8%"><br>
+                    
+                        <div class="caixaMensagem">
+                            <p>Estamos processando o pagamento</p>
+                    
+                            <div class="statuBarra">
+                                <div class="progressoBarra"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="containerInferior">
                     <div class="compra">
                         <button class="botaoSubir" onclick="subir()">
@@ -418,6 +483,17 @@
                             <button class="button comida9" onclick="comida9(1)">comida9</button>
                             <button class="button comida10" onclick="comida10(1)">comida10</button>                        
                         </div>
+
+                        <div class="pagamento">
+                            <button class="credito" onclick="credito()"><span></span>Crédito</button>
+                            <button class="debito" onclick="debito()"><span></span>Débito</button>
+                            <button class="pix" onclick="pix()"><span></span>Pix</button>
+                        </div>
+
+                        <div class="metodoPagamento">
+                            <button class="copiaCola" onclick="copiaCola()">Pix Copia e Cola</button>
+                            <button class="QRCode" onclick="QRCode()">QR Code</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -483,6 +559,15 @@
 
                     <button onclick="fechar()">Aceitar</button>
                 </div>
+            </div>
+        </section>
+
+        <section id="concluirApp">
+            <div class="ultimaParte">
+                <h2>Agradecemos por pedir com a gente</h2>
+                <p>Seu pedido chegará em breve!</p>
+
+                <span></span>
             </div>
         </section>
 

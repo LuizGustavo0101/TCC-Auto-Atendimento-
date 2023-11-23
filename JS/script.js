@@ -360,7 +360,278 @@ function exibir(){
 
 // Parte de finalizar o pedido do cliente
 function finalizarPedido(){
-    document.querySelector(".pedidos").style.display = "none"
-
+    // se o dinheiro/preço/valor for maior que 0, continuar normalmente
+    var dinheiro = document.querySelector(".valorFinal").innerHTML;
     
+    if(dinheiro > 0 ){
+        // fechar a area de pedidos e os botões das comidas
+        document.querySelector(".compra").style.display = "none"
+        document.querySelector(".comida").style.display = "none"
+
+        // estilizar o tamanho da area de respostar para o pagamento
+        var tl = gsap.timeline();
+
+        document.querySelector(".efeito6").style.display = "flex";
+        tl.from(".efeito6",{
+            delay:0.5,
+            y: 80,
+            opacity:0, 
+            duration:0.3,
+        })
+
+        document.querySelector(".resposta").style.height = "15vh";
+        document.querySelector(".pagamento").style.display = "flex";
+        tl.from(".resposta",{
+            y:150,
+        })
+    }else{
+        alert("Não podemos finalizar a compra sem ter pedido nada!")
+    }
+
+}
+
+// formas de pagamentos
+function credito(){
+    // container para adicionar o innerHTML
+    var quarta = document.querySelector(".quartaParte");
+
+    var resposta = document.createElement('div');
+    resposta.className = "cliente";
+    resposta.innerHTML = `
+        <div class="caixaMensagem">
+            <p>Crédito</p>
+        </div>
+
+        <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
+    `;
+
+    // adicionar um espacamente entre os blocos
+    resposta.style.margin = "0px 0px 10px 0px";
+
+    quarta.appendChild(resposta);
+
+    alert("Pagamento Efetuado")
+    alert("Não aprendemos a fazer uma API nem a integrar com o site então essa parte ficará sem funcionar")   
+}
+
+function debito(){
+    // container para adicionar o innerHTML
+    var quarta = document.querySelector(".quartaParte");
+
+    var resposta = document.createElement('div');
+    resposta.className = "cliente";
+    resposta.innerHTML = `
+        <div class="caixaMensagem">
+            <p>Débito</p>
+        </div>
+
+        <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
+    `;
+
+    // adicionar um espacamente entre os blocos
+    resposta.style.margin = "0px 0px 10px 0px";
+
+    quarta.appendChild(resposta);
+
+    alert("Pagamento Efetuado")
+    alert("Não aprendemos a fazer uma API nem a integrar com o site então essa parte ficará sem funcionar")
+}
+
+function pix(){
+    // container para adicionar o innerHTML
+    var quarta = document.querySelector(".quartaParte");
+
+    var resposta = document.createElement('div');
+    resposta.className = "cliente";
+    resposta.innerHTML = `
+        <div class="caixaMensagem">
+            <p>Pix</p>
+        </div>
+
+        <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
+    `;
+
+    // adicionar um espacamente entre os blocos
+    resposta.style.margin = "0px 0px 10px 0px";
+
+    quarta.appendChild(resposta);
+
+    var tl = gsap.timeline()
+
+    document.querySelector(".efeito7").style.display = "flex"
+    tl.from(".efeito7",{
+        delay:0.5,
+        y: 80,
+        opacity:0, 
+        duration:0.3,
+    })
+
+    // sumir com as opções
+    tl.to(".resposta", {
+        y:80,
+        opacity:0,
+        delay:0.6,
+        duration:0.5,
+        onComplete: () => document.querySelector(".pagamento").style.display = "none"
+    })
+
+    document.querySelector(".metodoPagamento").style.display = "flex"
+    tl.from(".resposta", {
+        y:80,
+        opacity:0,
+        delay:0.2,
+        duration:0.2,
+    })
+
+}
+
+function QRCode(){
+    // container para adicionar o innerHTML
+    var quinta = document.querySelector(".quintaParte");
+
+    var resposta = document.createElement('div');
+    resposta.className = "cliente";
+    resposta.innerHTML = `
+        <div class="caixaMensagem">
+            <p>Pix QR Code</p>
+        </div>
+
+        <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
+    `;
+
+    // adicionar um espacamente entre os blocos
+    resposta.style.margin = "0px 0px 10px 0px";
+
+    quinta.appendChild(resposta);
+
+    var tl = gsap.timeline()
+
+    document.querySelector(".efeito8").style.display = "flex"
+    document.querySelector(".efeito11").style.display = "flex"
+    tl.from(".efeito8",{
+        delay:0.5,
+        y: 80,
+        opacity:0, 
+        duration:0.3,
+    })
+
+    tl.from(".efeito11",{
+        delay:0.5,
+        y: 80,
+        opacity:0, 
+        duration:0.3,
+    })
+
+    tl.to(".resposta", {
+        y:80,
+        opacity:0,
+        delay:0.6,
+        duration:0.5,
+    })
+
+    var elemento = document.querySelector(".progressoBarra");
+    var width = 1;
+    
+    setTimeout(()=>{
+        const intervalo = setInterval(() =>{
+            width += 1;
+            elemento.style.width = width + '%'; 
+
+            if(width >= 100){
+                clearInterval(intervalo);
+
+                var ultimaParte = document.querySelector(".ultimaParte");
+                ultimaParte.style.display = "flex";
+            
+                gsap.from(".ultimaParte",{
+                    delay:1,
+                    y:1000,
+                    duration:1,
+                })
+            }
+        }, 60);
+    }, 3000)
+}
+
+function copiaCola(){
+    // container para adicionar o innerHTML
+    var quinta = document.querySelector(".quintaParte");
+
+    var resposta = document.createElement('div');
+    resposta.className = "cliente";
+    resposta.innerHTML = `
+        <div class="caixaMensagem">
+            <p>Pix Copia e Cola</p>
+        </div>
+
+        <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
+    `;
+
+    // adicionar um espacamente entre os blocos
+    resposta.style.margin = "0px 0px 10px 0px";
+
+    quinta.appendChild(resposta);
+
+    var tl = gsap.timeline()
+
+    document.querySelector(".efeito9").style.display = "flex"
+    document.querySelector(".efeito10").style.display = "flex"
+    document.querySelector(".efeito11").style.display = "flex"
+    tl.from(".efeito9",{
+        delay:0.5,
+        y: 80,
+        opacity:0, 
+        duration:0.3,
+    })
+
+    tl.from(".efeito10",{
+        delay:0.5,
+        y: 80,
+        opacity:0, 
+        duration:0.3,
+    })
+
+    tl.from(".efeito11",{
+        delay:0.5,
+        y: 80,
+        opacity:0, 
+        duration:0.3,
+    })
+
+    tl.to(".resposta", {
+        y:80,
+        opacity:0,
+        delay:0.6,
+        duration:0.5,
+    })  
+
+    var elemento = document.querySelector(".progressoBarra");
+    var width = 1;
+    
+    setTimeout(()=>{
+        const intervalo = setInterval(() =>{
+            width += 1;
+            elemento.style.width = width + '%'; 
+
+            if(width >= 100){
+                clearInterval(intervalo);
+
+                var ultimaParte = document.querySelector(".ultimaParte");
+                ultimaParte.style.display = "flex";
+            
+                gsap.from(".ultimaParte",{
+                    delay:1,
+                    y:1000,
+                    duration:1,
+                })
+            }
+        }, 60);
+    }, 3000)
+}
+
+function copiar(){
+    var codigoCopiar = document.querySelector(".copiar");
+    navigator.clipboard.writeText(codigoCopiar.innerHTML);
+
+    alert("Código copiado para a área de transferência!!");
 }

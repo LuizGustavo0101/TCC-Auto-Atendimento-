@@ -656,7 +656,6 @@ function copiaCola(){
 
     document.querySelector(".efeito9").style.display = "flex"
     document.querySelector(".efeito10").style.display = "flex"
-    document.querySelector(".efeito11").style.display = "flex"
     tl.to(".resposta", {
         y:80,
         opacity:0,
@@ -678,7 +677,17 @@ function copiaCola(){
         duration:0.3,
     })
 
-    tl.from(".efeito11",{
+    
+}
+
+function copiar(){
+    var codigoCopiar = document.querySelector(".copiar");
+    navigator.clipboard.writeText(codigoCopiar.innerHTML);
+
+    alert("Código copiado para a área de transferência!!");
+
+    document.querySelector(".efeito11").style.display = "flex"
+    gsap.from(".efeito11",{
         delay:0.5,
         y: 80,
         opacity:0, 
@@ -707,11 +716,4 @@ function copiaCola(){
             }
         }, 60);
     }, 3000)
-}
-
-function copiar(){
-    var codigoCopiar = document.querySelector(".copiar");
-    navigator.clipboard.writeText(codigoCopiar.innerHTML);
-
-    alert("Código copiado para a área de transferência!!");
 }

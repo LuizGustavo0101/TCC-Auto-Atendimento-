@@ -235,7 +235,7 @@ main{
                             background-color: rgb(247, 247, 247);
                             border-radius: 20px;                            
 
-                            .imagemComida{
+                            .imagemComida1{
                                 display: flex;
                                 align-items: center;
                                 margin: 0px 10px 0px 10px;
@@ -244,6 +244,132 @@ main{
                                     width: 8vh;
                                     height: 8vh;
                                     background-image: url(../imagens/foto/A\ super\ salada\ do\ chefe.jpg);
+                                    background-size: cover;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .imagemComida2{
+                                display: flex;
+                                align-items: center;
+                                margin: 0px 10px 0px 10px;
+
+                                div{
+                                    width: 8vh;
+                                    height: 8vh;
+                                    background-image: url(../imagens/foto/macarrõa\ a\ carbonara.jpg);
+                                    background-size: cover;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .imagemComida3{
+                                display: flex;
+                                align-items: center;
+                                margin: 0px 10px 0px 10px;
+
+                                div{
+                                    width: 8vh;
+                                    height: 8vh;
+                                    background-image: url(../imagens/foto/prato\ baiano\ com\ fruta.jpg);
+                                    background-size: cover;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .imagemComida4{
+                                display: flex;
+                                align-items: center;
+                                margin: 0px 10px 0px 10px;
+
+                                div{
+                                    width: 8vh;
+                                    height: 8vh;
+                                    background-image: url(../imagens/foto/Prato\ feito\ de\ carne.jpg);
+                                    background-size: cover;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .imagemComida5{
+                                display: flex;
+                                align-items: center;
+                                margin: 0px 10px 0px 10px;
+
+                                div{
+                                    width: 8vh;
+                                    height: 8vh;
+                                    background-image: url(../imagens/foto/ensopado\ de\ goulash.jpg);
+                                    background-size: cover;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .imagemComida6{
+                                display: flex;
+                                align-items: center;
+                                margin: 0px 10px 0px 10px;
+
+                                div{
+                                    width: 8vh;
+                                    height: 8vh;
+                                    background-image: url(../imagens/foto/Salada\ maromba.jpg);
+                                    background-size: cover;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .imagemComida7{
+                                display: flex;
+                                align-items: center;
+                                margin: 0px 10px 0px 10px;
+
+                                div{
+                                    width: 8vh;
+                                    height: 8vh;
+                                    background-image: url(../imagens/foto/suco\ de\ jarra.jpg);
+                                    background-size: cover;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .imagemComida8{
+                                display: flex;
+                                align-items: center;
+                                margin: 0px 10px 0px 10px;
+
+                                div{
+                                    width: 8vh;
+                                    height: 8vh;
+                                    background-image: url(../imagens/foto/Hamburguer\ da\ casa.jpg);
+                                    background-size: cover;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .imagemComida9{
+                                display: flex;
+                                align-items: center;
+                                margin: 0px 10px 0px 10px;
+
+                                div{
+                                    width: 8vh;
+                                    height: 8vh;
+                                    background-image: url(../imagens/foto/lasanha\ do\ chefe.jpg);
+                                    background-size: cover;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .imagemComida10{
+                                display: flex;
+                                align-items: center;
+                                margin: 0px 10px 0px 10px;
+
+                                div{
+                                    width: 8vh;
+                                    height: 8vh;
+                                    background-image: url(../imagens/foto/legumes\ na\ churrasqueira.jpg);
                                     background-size: cover;
                                     border-radius: 50%;
                                 }
@@ -333,14 +459,14 @@ main{
         }
 
         .resposta{
-            height: 11vh;
+            height: 15vh;
             display: none;
             background-color: white;
             box-shadow:0px -10px 13px -16px rgba(0, 0, 0, 0.473);
-            
+            width: 100%;
+
             .rolar{
                 height: 100%;
-                width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
@@ -360,22 +486,17 @@ main{
                 overflow-x: scroll;
                 padding-right: 20px;
                 height: 100%;
-                display: flex;
+                display: none;
                 align-items: center;
 
+
                 .button{
-                    height: 50px;
+                    height: 80px;
                     padding: 0px 20px;
                     background-color: $cor-cliente;
                     border-radius: 5px;
-                    font-size: 20px;
+                    font-size: 16px;
                     cursor: pointer;
-
-                    &:focus:not(.fim){
-                        opacity: .5;
-                        cursor: none;
-                        transition: 1s;
-                    }
                 }
 
                 @media (width <= 425px){

@@ -411,7 +411,47 @@ function credito(){
     quarta.appendChild(resposta);
 
     alert("Pagamento Efetuado")
-    alert("Não aprendemos a fazer uma API nem a integrar com o site então essa parte ficará sem funcionar")   
+    alert("Não aprendemos a fazer uma API nem a integrar com o site então essa parte ficará sem funcionar")  
+
+    var tl = gsap.timeline()
+
+    tl.to(".resposta", {
+        y:80,
+        opacity:0,
+        delay:0.6,
+        duration:0.5,
+    }) 
+    
+    document.querySelector(".efeito11").style.display = "flex"
+    tl.from(".efeito11",{
+        delay:0.5,
+        y: 80,
+        opacity:0, 
+        duration:0.3,
+    })
+
+    var elemento = document.querySelector(".progressoBarra");
+    var width = 1;
+    
+    setTimeout(()=>{
+        const intervalo = setInterval(() =>{
+            width += 1;
+            elemento.style.width = width + '%'; 
+
+            if(width >= 100){
+                clearInterval(intervalo);
+
+                var ultimaParte = document.querySelector(".ultimaParte");
+                ultimaParte.style.display = "flex";
+            
+                gsap.from(".ultimaParte",{
+                    delay:1,
+                    y:1000,
+                    duration:1,
+                })
+            }
+        }, 60);
+    }, 3000)
 }
 
 function debito(){
@@ -435,6 +475,46 @@ function debito(){
 
     alert("Pagamento Efetuado")
     alert("Não aprendemos a fazer uma API nem a integrar com o site então essa parte ficará sem funcionar")
+
+    var tl = gsap.timeline()
+
+    tl.to(".resposta", {
+        y:80,
+        opacity:0,
+        delay:0.6,
+        duration:0.5,
+    }) 
+
+    document.querySelector(".efeito11").style.display = "flex"
+    tl.from(".efeito11",{
+        delay:0.5,
+        y: 80,
+        opacity:0, 
+        duration:0.3,
+    })
+
+    var elemento = document.querySelector(".progressoBarra");
+    var width = 1;
+    
+    setTimeout(()=>{
+        const intervalo = setInterval(() =>{
+            width += 1;
+            elemento.style.width = width + '%'; 
+
+            if(width >= 100){
+                clearInterval(intervalo);
+
+                var ultimaParte = document.querySelector(".ultimaParte");
+                ultimaParte.style.display = "flex";
+            
+                gsap.from(".ultimaParte",{
+                    delay:1,
+                    y:1000,
+                    duration:1,
+                })
+            }
+        }, 60);
+    }, 3000)
 }
 
 function pix(){
@@ -508,6 +588,13 @@ function QRCode(){
 
     document.querySelector(".efeito8").style.display = "flex"
     document.querySelector(".efeito11").style.display = "flex"
+    tl.to(".resposta", {
+        y:80,
+        opacity:0,
+        delay:0.6,
+        duration:0.5,
+    })
+
     tl.from(".efeito8",{
         delay:0.5,
         y: 80,
@@ -520,13 +607,6 @@ function QRCode(){
         y: 80,
         opacity:0, 
         duration:0.3,
-    })
-
-    tl.to(".resposta", {
-        y:80,
-        opacity:0,
-        delay:0.6,
-        duration:0.5,
     })
 
     var elemento = document.querySelector(".progressoBarra");
@@ -577,6 +657,13 @@ function copiaCola(){
     document.querySelector(".efeito9").style.display = "flex"
     document.querySelector(".efeito10").style.display = "flex"
     document.querySelector(".efeito11").style.display = "flex"
+    tl.to(".resposta", {
+        y:80,
+        opacity:0,
+        delay:0.6,
+        duration:0.5,
+    })  
+
     tl.from(".efeito9",{
         delay:0.5,
         y: 80,
@@ -597,13 +684,6 @@ function copiaCola(){
         opacity:0, 
         duration:0.3,
     })
-
-    tl.to(".resposta", {
-        y:80,
-        opacity:0,
-        delay:0.6,
-        duration:0.5,
-    })  
 
     var elemento = document.querySelector(".progressoBarra");
     var width = 1;

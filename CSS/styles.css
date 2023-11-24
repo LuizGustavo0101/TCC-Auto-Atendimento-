@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   border: 0;
@@ -205,33 +206,303 @@ main {
   background-color: rgb(247, 247, 247);
   border-radius: 20px;
 }
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida {
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida1,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida1,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida1,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida1,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida1,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida1,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida1,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida1,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida1,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida1 {
   display: flex;
   align-items: center;
   margin: 0px 10px 0px 10px;
 }
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida div,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida div,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida div,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida div,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida div,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida div,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida div,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida div,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida div,
-#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida div {
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida1 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida1 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida1 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida1 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida1 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida1 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida1 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida1 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida1 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida1 div {
   width: 8vh;
   height: 8vh;
   background-image: url(../imagens/foto/A\ super\ salada\ do\ chefe.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida2,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida2,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida2,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida2,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida2,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida2,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida2,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida2,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida2,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida2 {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida2 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida2 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida2 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida2 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida2 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida2 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida2 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida2 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida2 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida2 div {
+  width: 8vh;
+  height: 8vh;
+  background-image: url(../imagens/foto/macarrõa\ a\ carbonara.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida3,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida3,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida3,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida3,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida3,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida3,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida3,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida3,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida3,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida3 {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida3 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida3 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida3 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida3 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida3 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida3 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida3 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida3 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida3 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida3 div {
+  width: 8vh;
+  height: 8vh;
+  background-image: url(../imagens/foto/prato\ baiano\ com\ fruta.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida4,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida4,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida4,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida4,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida4,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida4,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida4,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida4,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida4,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida4 {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida4 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida4 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida4 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida4 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida4 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida4 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida4 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida4 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida4 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida4 div {
+  width: 8vh;
+  height: 8vh;
+  background-image: url(../imagens/foto/Prato\ feito\ de\ carne.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida5,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida5,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida5,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida5,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida5,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida5,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida5,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida5,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida5,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida5 {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida5 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida5 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida5 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida5 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida5 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida5 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida5 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida5 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida5 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida5 div {
+  width: 8vh;
+  height: 8vh;
+  background-image: url(../imagens/foto/ensopado\ de\ goulash.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida6,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida6,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida6,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida6,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida6,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida6,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida6,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida6,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida6,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida6 {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida6 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida6 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida6 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida6 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida6 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida6 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida6 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida6 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida6 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida6 div {
+  width: 8vh;
+  height: 8vh;
+  background-image: url(../imagens/foto/Salada\ maromba.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida7,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida7,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida7,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida7,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida7,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida7,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida7,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida7,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida7,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida7 {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida7 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida7 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida7 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida7 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida7 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida7 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida7 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida7 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida7 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida7 div {
+  width: 8vh;
+  height: 8vh;
+  background-image: url(../imagens/foto/suco\ de\ jarra.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida8,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida8,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida8,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida8,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida8,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida8,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida8,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida8,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida8,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida8 {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida8 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida8 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida8 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida8 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida8 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida8 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida8 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida8 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida8 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida8 div {
+  width: 8vh;
+  height: 8vh;
+  background-image: url(../imagens/foto/Hamburguer\ da\ casa.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida9,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida9,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida9,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida9,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida9,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida9,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida9,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida9,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida9,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida9 {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida9 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida9 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida9 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida9 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida9 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida9 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida9 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida9 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida9 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida9 div {
+  width: 8vh;
+  height: 8vh;
+  background-image: url(../imagens/foto/lasanha\ do\ chefe.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida10,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida10,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida10,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida10,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida10,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida10,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida10,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida10,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida10,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida10 {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido1 .imagemComida10 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido2 .imagemComida10 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido3 .imagemComida10 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido4 .imagemComida10 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido5 .imagemComida10 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido6 .imagemComida10 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido7 .imagemComida10 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido8 .imagemComida10 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido9 .imagemComida10 div,
+#chatbot .containerInferior .compra .pedidos .containerPedidos .item .pedido10 .imagemComida10 div {
+  width: 8vh;
+  height: 8vh;
+  background-image: url(../imagens/foto/legumes\ na\ churrasqueira.jpg);
   background-size: cover;
   border-radius: 50%;
 }
@@ -370,14 +641,14 @@ main {
   font-size: 18px;
 }
 #chatbot .containerInferior .resposta {
-  height: 11vh;
+  height: 15vh;
   display: none;
   background-color: white;
   box-shadow: 0px -10px 13px -16px rgba(0, 0, 0, 0.473);
+  width: 100%;
 }
 #chatbot .containerInferior .resposta .rolar {
   height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -395,21 +666,16 @@ main {
   overflow-x: scroll;
   padding-right: 20px;
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
 }
 #chatbot .containerInferior .resposta .comida .button {
-  height: 50px;
+  height: 80px;
   padding: 0px 20px;
   background-color: rgb(230, 230, 230);
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
-}
-#chatbot .containerInferior .resposta .comida .button:focus:not(.fim) {
-  opacity: 0.5;
-  cursor: none;
-  transition: 1s;
 }
 @media (width <= 425px) {
   #chatbot .containerInferior .resposta .comida .button {

@@ -9,7 +9,7 @@ function comida1(valor){
     resposta.className = "cliente";
     resposta.innerHTML = `
         <div class="caixaMensagem">
-            <p>Comida 1</p>
+            <p>Salada do Chefe</p>
         </div>
 
         <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
@@ -76,7 +76,7 @@ function comida2(valor){
     resposta.className = "cliente";
     resposta.innerHTML = `
         <div class="caixaMensagem">
-            <p>Comida 2</p>
+            <p>Macarronada a Carbonara</p>
         </div>
 
         <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
@@ -142,7 +142,7 @@ function comida3(valor){
     resposta.className = "cliente";
     resposta.innerHTML = `
         <div class="caixaMensagem">
-            <p>Comida 3</p>
+            <p>Prato baiano com frutas</p>
         </div>
 
         <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
@@ -208,7 +208,7 @@ function comida4(valor){
     resposta.className = "cliente";
     resposta.innerHTML = `
         <div class="caixaMensagem">
-            <p>Comida 4</p>
+            <p>Prato feito de carne</p>
         </div>
 
         <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
@@ -274,7 +274,7 @@ function comida5(valor){
     resposta.className = "cliente";
     resposta.innerHTML = `
         <div class="caixaMensagem">
-            <p>Comida 5</p>
+            <p>Ensopado e goulash</p>
         </div>
 
         <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
@@ -340,7 +340,7 @@ function comida6(valor){
     resposta.className = "cliente";
     resposta.innerHTML = `
         <div class="caixaMensagem">
-            <p>Comida 6</p>
+            <p>Salada Maromba</p>
         </div>
 
         <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
@@ -406,7 +406,7 @@ function comida7(valor){
     resposta.className = "cliente";
     resposta.innerHTML = `
         <div class="caixaMensagem">
-            <p>Comida 7</p>
+            <p>Suco de jarra</p>
         </div>
 
         <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
@@ -472,7 +472,7 @@ function comida8(valor){
     resposta.className = "cliente";
     resposta.innerHTML = `
         <div class="caixaMensagem">
-            <p>Comida 8</p>
+            <p>Hamburguer da casa</p>
         </div>
 
         <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
@@ -538,7 +538,7 @@ function comida9(valor){
     resposta.className = "cliente";
     resposta.innerHTML = `
         <div class="caixaMensagem">
-            <p>Comida 9</p>
+            <p>Lasanha do chefe</p>
         </div>
 
         <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">
@@ -604,7 +604,7 @@ function comida10(valor){
     resposta.className = "cliente";
     resposta.innerHTML = `
         <div class="caixaMensagem">
-            <p>Comida 10</p>
+            <p>Legumes na churrasqueira</p>
         </div>
 
         <img src="./imagens/foto/Anonimos.png" class="fotoCliente" width="8%">

@@ -16,6 +16,14 @@ function sim(){
     
     primeira.appendChild(resposta);
 
+    // sumir com as opções
+    gsap.to(".resposta", {
+        y:80,
+        opacity:0,
+        delay:0.6,
+        duration:0.5,
+    })
+
     // Abrir o modal da tela de login
     setTimeout(function(){
         var modalLogin = document.querySelector("#containerLogin");
